@@ -7,9 +7,18 @@ services:
       - 'config:/config/archipel'
       - /var/run/docker.sock:/var/run/docker.sock
       environment:
-        - ADDRESS=
-        - PASSWORD=
-        - PARITY_ARGS=
+        - VALIDATOR_NETWORK=
+        - VALIDATOR_NODE_ALIAS=
+        - VALIDATOR_NODE_ADDRESS=
+        # validator_node_keystore
+        # path : /config/archipel/validator_node_keystore.json
+        - VALIDATOR_NODE_KEYSTORE_PASSWORD=
+        - ARCHIPEL_NODE_ALIAS=
+        - ARCHIPEL_NODE_ADDRESS=
+        # archipel_node_keystore
+        # path : /config/archipel/archipel_node_keystore.json
+        - ARCHIPEL_NODE_KEYSTORE_PASSWORD=
+        - ARCHIPEL_BOOTNODES=
     restart: always
     volumes:
       config: {}

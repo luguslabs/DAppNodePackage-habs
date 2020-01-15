@@ -33,7 +33,7 @@
     },
     "archipel_node_keystore_password": {
         "type": "environment",
-        "name": "ARCHIPEL_NODE_KEYSTORE"
+        "name": "ARCHIPEL_NODE_KEYSTORE_PASSWORD"
     },
     "archipel_bootnodes": {
         "type": "environment",
