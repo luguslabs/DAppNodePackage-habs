@@ -3,4 +3,13 @@ services:
   archipel.public.dappnode.eth:
     build: ./build
     image: 'archipel.public.dappnode.eth:0.0.1'
+    volumes:
+      - 'config:/config/archipel'
+      - /var/run/docker.sock:/var/run/docker.sock
+      environment:
+        - ADDRESS=
+        - PASSWORD=
+        - PARITY_ARGS=
     restart: always
+    volumes:
+      config: {}

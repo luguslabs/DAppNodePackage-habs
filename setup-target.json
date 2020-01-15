@@ -12,8 +12,8 @@
         "name": "VALIDATOR_NODE_ADDRESS"
     },
     "validator_node_keystore": {
-        "type": "environment",
-        "name": "VALIDATOR_NODE_KEYSTORE"
+        "type": "fileUpload",
+        "path": "/config/archipel/validator_node_keystore.json"
     },
     "validator_node_keystore_password": {
         "type": "environment",
@@ -28,8 +28,8 @@
         "name": "ARCHIPEL_NODE_ADDRESS"
     },
     "archipel_node_keystore": {
-        "type": "environment",
-        "name": "ARCHIPEL_NODE_KEYSTORE"
+        "type": "fileUpload",
+        "path": "/config/archipel/archipel_node_keystore.json"
     },
     "archipel_node_keystore_password": {
         "type": "environment",
