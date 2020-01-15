@@ -1,0 +1,6 @@
+version: '3.4'
+services:
+  archipel.public.dappnode.eth:
+    build: ./build
+    image: 'archipel.public.dappnode.eth:0.0.1'
+    restart: always

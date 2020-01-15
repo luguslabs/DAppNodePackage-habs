@@ -1,0 +1,42 @@
+{
+    "validator_network": {
+        "type": "environment",
+        "name": "VALIDATOR_NETWORK"
+    },
+    "validator_node_alias": {
+        "type": "environment",
+        "name": "VALIDATOR_NODE_ALIAS"
+    },
+    "validator_node_address": {
+        "type": "environment",
+        "name": "VALIDATOR_NODE_ADDRESS"
+    },
+    "validator_node_keystore": {
+        "type": "environment",
+        "name": "VALIDATOR_NODE_KEYSTORE"
+    },
+    "validator_node_keystore_password": {
+        "type": "environment",
+        "name": "VALIDATOR_NODE_KEYSTORE_PASSWORD"
+    },
+    "archipel_node_alias": {
+        "type": "environment",
+        "name": "ARCHIPEL_NODE_ALIAS"
+    },
+    "archipel_node_address": {
+        "type": "environment",
+        "name": "ARCHIPEL_NODE_ADDRESS"
+    },
+    "archipel_node_keystore": {
+        "type": "environment",
+        "name": "ARCHIPEL_NODE_KEYSTORE"
+    },
+    "archipel_node_keystore_password": {
+        "type": "environment",
+        "name": "ARCHIPEL_NODE_KEYSTORE"
+    },
+    "archipel_bootnodes": {
+        "type": "environment",
+        "name": "ARCHIPEL_BOOTNODES"
+    }
+}
