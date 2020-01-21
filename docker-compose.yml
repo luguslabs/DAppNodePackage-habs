@@ -4,21 +4,18 @@ services:
     build: ./build
     image: 'archipel.public.dappnode.eth:0.0.1'
     volumes:
-      - 'config:/config/archipel'
+      - 'data:/root/chain/data'
       - /var/run/docker.sock:/var/run/docker.sock
-      environment:
-        - VALIDATOR_NETWORK=
-        - VALIDATOR_NODE_ALIAS=
-        - VALIDATOR_NODE_ADDRESS=
-        # validator_node_keystore
-        # path : /config/archipel/validator_node_keystore.json
-        - VALIDATOR_NODE_KEYSTORE_PASSWORD=
+    environment:
         - ARCHIPEL_NODE_ALIAS=
-        - ARCHIPEL_NODE_ADDRESS=
-        # archipel_node_keystore
-        # path : /config/archipel/archipel_node_keystore.json
-        - ARCHIPEL_NODE_KEYSTORE_PASSWORD=
+        - ARCHIPEL_KEY_SEED=
+        - ARCHIPEL_AUTHORITIES_SR25519_LIST=
+        - ARCHIPEL_AUTHORITIES_ED25519_LIST=
         - ARCHIPEL_BOOTNODES=
+        - POLKADOT_NAME=
+        - POLKADOT_KEY=
+        - POLKADOT_IMAGE=
+        - POLKADOT_PREFIX=
     restart: always
-    volumes:
-      config: {}
+volumes:
+      data: {}

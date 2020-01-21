@@ -1,42 +1,38 @@
 {
-    "validator_network": {
-        "type": "environment",
-        "name": "VALIDATOR_NETWORK"
-    },
-    "validator_node_alias": {
-        "type": "environment",
-        "name": "VALIDATOR_NODE_ALIAS"
-    },
-    "validator_node_address": {
-        "type": "environment",
-        "name": "VALIDATOR_NODE_ADDRESS"
-    },
-    "validator_node_keystore": {
-        "type": "fileUpload",
-        "path": "/config/archipel/validator_node_keystore.json"
-    },
-    "validator_node_keystore_password": {
-        "type": "environment",
-        "name": "VALIDATOR_NODE_KEYSTORE_PASSWORD"
-    },
     "archipel_node_alias": {
         "type": "environment",
         "name": "ARCHIPEL_NODE_ALIAS"
     },
-    "archipel_node_address": {
+    "archipel_key_seed": {
         "type": "environment",
-        "name": "ARCHIPEL_NODE_ADDRESS"
+        "name": "ARCHIPEL_KEY_SEED"
     },
-    "archipel_node_keystore": {
-        "type": "fileUpload",
-        "path": "/config/archipel/archipel_node_keystore.json"
-    },
-    "archipel_node_keystore_password": {
+    "archipel_authorities_sr25519_list": {
         "type": "environment",
-        "name": "ARCHIPEL_NODE_KEYSTORE_PASSWORD"
+        "name": "ARCHIPEL_AUTHORITIES_SR25519_LIST"
+    },
+    "archipel_authorities_ed25519_list": {
+        "type": "environment",
+        "name": "ARCHIPEL_AUTHORITIES_ED25519_LIST"
     },
     "archipel_bootnodes": {
         "type": "environment",
         "name": "ARCHIPEL_BOOTNODES"
+    },
+    "polkadot_name": {
+        "type": "environment",
+        "name": "POLKADOT_NAME"
+    },
+    "polkadot_key": {
+        "type": "environment",
+        "name": "POLKADOT_KEY"
+    },
+    "polkadot_image": {
+        "type": "environment",
+        "name": "POLKADOT_IMAGE"
+    },
+    "polkadot_prefix": {
+        "type": "environment",
+        "name": "POLKADOT_PREFIX"
     }
 }

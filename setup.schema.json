@@ -2,74 +2,61 @@
     "description": "# Archipel description here",
     "type": "object",
     "properties": {
-        "validator_network": {
-            "type": "string",
-            "title": "Validator Network",
-            "description": "Select the validator High availibility service you want to create or join",
-            "default": "AlexanderTestnet",
-            "enum": [
-                "PolkadotAlexander",
-                "PolkadotKusama"
-            ]
-        },
-        "validator_node_alias": {
-            "type": "string",
-            "title": "Validator Node Alias",
-            "description": "Alias name for your validator node (will be public)"
-        },
-        "validator_node_address": {
-            "type": "string",
-            "title": "Validator public Address",
-            "description": "Public validator address"
-        },
-        "validator_node_keystore": {
-            "type": "string",
-            "format": "data-url",
-            "title": "Validator Node Keystore",
-            "description": "Your Keystore/JSON file containing the private key that you want to use for this validator node"
-        },
-        "validator_node_keystore_password": {
-            "type": "string",
-            "title": "Validator Node Keystore Password",
-            "description": "Password to unlock the uploaded Validator Node keystore"
-        },
         "archipel_node_alias": {
             "type": "string",
             "title": "Archipel Node Alias",
             "description": "Alias name for your archipel substrate node in the federation"
         },
-        "archipel_node_address": {
+        "archipel_key_seed": {
             "type": "string",
-            "title": "Archipel identity Address",
-            "description": "Public address from the keystore.\nFor validators, you will use this address to seal blocks"
+            "title": "Archipel identity Seed",
+            "description": "Seed to unlock account to send transactions"
+        },        
+        "archipel_authorities_sr25519_list": {
+            "type": "string",
+            "title": "Archipel Authorities List. SR25519 format",
+            "description": "Addresses of Archipel authorities in SR25519 format separated by \",\" char. Needed for genesis spec chain"
         },
-        "archipel_node_keystore": {
+        "archipel_authorities_ed25519_list": {
             "type": "string",
-            "format": "data-url",
-            "title": "Archipel identity Keystore",
-            "description": "Your Keystore/JSON file containing the private key that you want to use for this validator node"
-        },
-        "archipel_node_keystore_password": {
-            "type": "string",
-            "title": "Archipel identity Keystore Password",
-            "description": "Password to unlock the uploaded Archiel Identity keystore"
+            "title": "Archipel Authorities List. ED25519 format",
+            "description": "Addresses of Archipel authorities in ED25519 format separated by \",\" char. Needed for genesis spec chain"
         },
         "archipel_bootnodes": {
             "type": "string",
             "title": "Archipel bootnodes list",
             "description": "Archipel federation bootnodes list"
+        },
+        "polkadot_name": {
+            "type": "string",
+            "title": "Polkadot Name",
+            "description": "Polkadot Name"
+        },
+        "polkadot_key": {
+            "type": "string",
+            "title": "Polkadot Key",
+            "description": "Polkadot Key"
+        },
+        "polkadot_image": {
+            "type": "string",
+            "title": "Polkadot image",
+            "description": "Polkadot image"
+        },
+        "polkadot_prefix": {
+            "type": "string",
+            "title": "Polkadot prefix",
+            "description": "Polkadot prefix"
         }
     },
     "required": [
-        "validator_network",
-        "validator_node_alias",
-        "validator_node_address",
-        "validator_node_keystore",
-        "validator_node_keystore_password",
         "archipel_node_alias",
-        "archipel_node_address",
-        "archipel_node_keystore",
-        "archipel_node_keystore_password",
-        "archipel_bootnodes"
+        "archipel_key_seed",
+        "archipel_authorities_sr25519_list",
+        "archipel_authorities_ed25519_list",
+        "polkadot_name",
+        "polkadot_key",
+        "polkadot_image",   
+        "polkadot_prefix"
     ]
 }
+
