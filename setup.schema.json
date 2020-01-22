@@ -83,8 +83,9 @@
         "archipel_key_seed",
         "archipel_authorities_sr25519_list",
         "archipel_authorities_ed25519_list",
+        "archipel_chain_sudo",
+        "archipel_service",
         "polkadot_name",
-        "polkadot_key",
         "polkadot_image",   
         "polkadot_prefix"
     ]
