@@ -31,10 +31,6 @@
         "type": "environment",
         "name": "POLKADOT_NAME"
     },
-    "polkadot_key": {
-        "type": "environment",
-        "name": "POLKADOT_KEY"
-    },
     "polkadot_image": {
         "type": "environment",
         "name": "POLKADOT_IMAGE"

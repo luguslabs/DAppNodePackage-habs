@@ -42,11 +42,6 @@
             "title": "Polkadot Name",
             "description": "Polkadot Name"
         },
-        "polkadot_key": {
-            "type": "string",
-            "title": "Polkadot Key",
-            "description": "Polkadot Key"
-        },
         "polkadot_image": {
             "type": "string",
             "title": "Polkadot image",

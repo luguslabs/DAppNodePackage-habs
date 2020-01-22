@@ -15,7 +15,6 @@ services:
       - ARCHIPEL_CHAIN_SUDO=$ARCHIPEL_CHAIN_SUDO
       - SERVICE=$SERVICE
       - POLKADOT_NAME=$POLKADOT_NAME
-      - POLKADOT_KEY=$POLKADOT_KEY
       - POLKADOT_IMAGE=$POLKADOT_IMAGE
       - POLKADOT_PREFIX=$POLKADOT_PREFIX
       - POLKADOT_KEY_GRAN=$POLKADOT_KEY_GRAN
@@ -26,6 +25,3 @@ services:
     restart: always
 volumes:
   data: {}
-
-
-
