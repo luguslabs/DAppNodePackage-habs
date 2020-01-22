@@ -32,20 +32,10 @@
             "title": "Archipel Chain Sudo",
             "description": "Archipel Chain Sudo Address"
         },
-        "archipel_node_ws": {
+        "archipel_service": {
             "type": "string",
-            "title": "NODE_WS",
-            "description": "NODE_WS"
-        },
-        "archipel_mnemonic": {
-            "type": "string",
-            "name": "MNEMONIC",
-            "description": "MNEMONIC"
-        },
-        "archipel_alivetime": {
-            "type": "string",
-            "name": "ALIVE_TIME",
-            "description": "ALIVE_TIME"
+            "title": "Archipel Service",
+            "description": "Archipel Service. Possible values = polkadot"
         },
         "polkadot_name": {
             "type": "string",
