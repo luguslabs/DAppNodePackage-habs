@@ -6,6 +6,8 @@ services:
     volumes:
       - 'data:/root/chain/data'
       - '/var/run/docker.sock:/var/run/docker.sock'
+    ports:
+      - '30333:30333'
     environment:
       - ARCHIPEL_NODE_ALIAS=$ARCHIPEL_NODE_ALIAS
       - ARCHIPEL_KEY_SEED=$ARCHIPEL_KEY_SEED
