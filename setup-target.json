@@ -23,6 +23,18 @@
         "type": "environment",
         "name": "ARCHIPEL_CHAIN_SUDO"
     },
+    "archipel_node_ws": {
+        "type": "environment",
+        "name": "NODE_WS"
+    },
+    "archipel_mnemonic": {
+        "type": "environment",
+        "name": "MNEMONIC"
+    },
+    "archipel_alivetime": {
+        "type": "environment",
+        "name": "ALIVE_TIME"
+    },
     "polkadot_name": {
         "type": "environment",
         "name": "POLKADOT_NAME"
