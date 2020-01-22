@@ -56,6 +56,31 @@
             "type": "string",
             "title": "Polkadot prefix",
             "description": "Polkadot prefix"
+        },
+        "polkadot_key_gran": {
+            "type": "string",
+            "name": "POLKADOT_KEY_GRAN",
+            "description": "POLKADOT_KEY_GRAN session key"
+        },
+        "polkadot_key_babe": {
+            "type": "string",
+            "name": "POLKADOT_KEY_BABE",
+            "description": "POLKADOT_KEY_BABE session key"
+        },
+        "polkadot_key_acco": {
+            "type": "string",
+            "name": "POLKADOT_KEY_ACCO",
+            "description": "POLKADOT_KEY_ACCO session key"
+        },
+        "polkadot_key_imon": {
+            "type": "string",
+            "name": "POLKADOT_KEY_IMON",
+            "description": "POLKADOT_KEY_IMON session key"
+        },
+        "polkadot_key_audi": {
+            "type": "string",
+            "name": "POLKADOT_KEY_AUDI",
+            "description": "POLKADOT_KEY_AUDI session key"
         }
     },
     "required": [

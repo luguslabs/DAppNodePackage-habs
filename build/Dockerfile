@@ -1,1 +1,1 @@
-FROM luguslabs/archipel:commit1bf0819
+FROM luguslabs/archipel:commit23063a8

@@ -42,5 +42,25 @@
     "polkadot_prefix": {
         "type": "environment",
         "name": "POLKADOT_PREFIX"
+    },
+    "polkadot_key_gran": {
+        "type": "environment",
+        "name": "POLKADOT_KEY_GRAN"
+    },
+    "polkadot_key_babe": {
+        "type": "environment",
+        "name": "POLKADOT_KEY_BABE"
+    },
+    "polkadot_key_acco": {
+        "type": "environment",
+        "name": "POLKADOT_KEY_ACCO"
+    },
+    "polkadot_key_imon": {
+        "type": "environment",
+        "name": "POLKADOT_KEY_IMON"
+    },
+    "polkadot_key_audi": {
+        "type": "environment",
+        "name": "POLKADOT_KEY_AUDI"
     }
 }
