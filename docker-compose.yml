@@ -5,18 +5,18 @@ services:
     image: 'archipel.public.dappnode.eth:0.0.1'
     volumes:
       - 'data:/root/chain/data'
-      - /var/run/docker.sock:/var/run/docker.sock
+      - '/var/run/docker.sock:/var/run/docker.sock'
     environment:
-        - ARCHIPEL_NODE_ALIAS=
-        - ARCHIPEL_KEY_SEED=
-        - ARCHIPEL_AUTHORITIES_SR25519_LIST=
-        - ARCHIPEL_AUTHORITIES_ED25519_LIST=
-        - ARCHIPEL_CHAIN_ADDITIONAL_PARAMS=
-        - ARCHIPEL_CHAIN_SUDO=
-        - POLKADOT_NAME=
-        - POLKADOT_KEY=
-        - POLKADOT_IMAGE=
-        - POLKADOT_PREFIX=
+      - ARCHIPEL_NODE_ALIAS=
+      - ARCHIPEL_KEY_SEED=
+      - ARCHIPEL_AUTHORITIES_SR25519_LIST=
+      - ARCHIPEL_AUTHORITIES_ED25519_LIST=
+      - ARCHIPEL_CHAIN_ADDITIONAL_PARAMS=
+      - ARCHIPEL_CHAIN_SUDO=
+      - POLKADOT_NAME=
+      - POLKADOT_KEY=
+      - POLKADOT_IMAGE=
+      - POLKADOT_PREFIX=
     restart: always
 volumes:
-      data: {}
+  data: {}
