@@ -22,10 +22,15 @@
             "title": "Archipel Authorities List. ED25519 format",
             "description": "Addresses of Archipel authorities in ED25519 format separated by \",\" char. Needed for genesis spec chain"
         },
-        "archipel_bootnodes": {
+        "archipel_chain_additional_params": {
             "type": "string",
-            "title": "Archipel bootnodes list",
-            "description": "Archipel federation bootnodes list"
+            "title": "Archipel Node Params",
+            "description": "Archipel Node Params : --bootnodes etc ..."
+        },
+        "archipel_chain_sudo": {
+            "type": "string",
+            "title": "Archipel Chain Sudo",
+            "description": "Archipel Chain Sudo Address"
         },
         "polkadot_name": {
             "type": "string",

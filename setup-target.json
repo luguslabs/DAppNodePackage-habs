@@ -15,9 +15,13 @@
         "type": "environment",
         "name": "ARCHIPEL_AUTHORITIES_ED25519_LIST"
     },
-    "archipel_bootnodes": {
+    "archipel_chain_additional_params": {
         "type": "environment",
-        "name": "ARCHIPEL_BOOTNODES"
+        "name": "CHAIN_ADDITIONAL_PARAMS"
+    },
+    "archipel_chain_sudo": {
+        "type": "environment",
+        "name": "ARCHIPEL_CHAIN_SUDO"
     },
     "polkadot_name": {
         "type": "environment",

@@ -1,1 +1,1 @@
-FROM luguslabs/archipel
+FROM luguslabs/archipel:latest
