@@ -62,15 +62,15 @@
             "name": "POLKADOT_KEY_BABE",
             "description": "POLKADOT_KEY_BABE session key"
         },
-        "polkadot_key_acco": {
-            "type": "string",
-            "name": "POLKADOT_KEY_ACCO",
-            "description": "POLKADOT_KEY_ACCO session key"
-        },
         "polkadot_key_imon": {
             "type": "string",
             "name": "POLKADOT_KEY_IMON",
             "description": "POLKADOT_KEY_IMON session key"
+        },
+        "polkadot_key_para": {
+            "type": "string",
+            "name": "POLKADOT_KEY_PARA",
+            "description": "POLKADOT_KEY_PARA session key"
         },
         "polkadot_key_audi": {
             "type": "string",

@@ -47,13 +47,13 @@
         "type": "environment",
         "name": "POLKADOT_KEY_BABE"
     },
-    "polkadot_key_acco": {
-        "type": "environment",
-        "name": "POLKADOT_KEY_ACCO"
-    },
     "polkadot_key_imon": {
         "type": "environment",
         "name": "POLKADOT_KEY_IMON"
+    },
+    "polkadot_key_para": {
+        "type": "environment",
+        "name": "POLKADOT_KEY_PARA"
     },
     "polkadot_key_audi": {
         "type": "environment",
