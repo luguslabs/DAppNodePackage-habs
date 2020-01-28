@@ -1,5 +1,5 @@
 {
-    "description": "# Archipel : divide and federate to run unsinkable services ! [README](https://github.com/luguslabs/archipel#archipel)",
+    "description": "Archipel Configuration. You must configure folowing parameters to start the Archipel Chain and also a Polkadot node. [README](https://github.com/luguslabs/archipel#archipel)",
     "type": "object",
     "properties": {
         "archipel_node_alias": {
