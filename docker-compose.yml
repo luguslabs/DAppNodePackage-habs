@@ -16,7 +16,7 @@ services:
       - ARCHIPEL_AUTHORITIES_ED25519_LIST=
       - SERVICE=polkadot
       - POLKADOT_NAME=
-      - POLKADOT_IMAGE=parity/polkadot:latest
+      - 'POLKADOT_IMAGE=parity/polkadot:latest'
       - POLKADOT_PREFIX=kusama-data-
       - POLKADOT_KEY_GRAN=
       - POLKADOT_KEY_BABE=

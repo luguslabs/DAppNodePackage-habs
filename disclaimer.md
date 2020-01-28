@@ -1,4 +1,4 @@
-This package is not secure at all. The developement is still in progress. More secure setup will be done in the next release in our development Roadmap millestone 2. This is a proof of concept package.
+This package is not secure at all. The developement is still in progress. More secure setup will be done in the next releases. This is a proof of concept package.
 
 This software is experimental and development is still in progress, presented 'as is' and inherently carries risks. By installing it, you acknowledge that LUGUS LABS has done its best to mitigate these risks and accept to waive any liability or responsibility for LUGUS LABS in case of any shortage, discrepancy, damage, loss or destruction of any digital asset managed within this Archipel DAppNode package.
 
