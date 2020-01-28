@@ -5,7 +5,7 @@ Archipel package for DAppNode
 ### Configuration parameters
 
 | Variable | Description | Values |
-|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
+|----------|-------------|--------|
 | `ARCHIPEL_NODE_ALIAS` | Node name for the Archipel Substrate node within the federation. | String. Example`Archipel-"yourFederationName"-"Node Name here`|
 | `ARCHIPEL_KEY_SEED` | 12 words mnemonic. Can be generated with [Subkey](https://substrate.dev/docs/en/ecosystem/subkey). Use for Archipel Substrate node. Will be used for consensus authority and transactions propagation in the Archipel Chain. | mnemonic |
 | `ARCHIPEL_CHAIN_ADDITIONAL_PARAMS` | Parameters supported by substrate node. At least, you must valorize bootnodes. Tu valorize bootnodes you must start nodes first and then rebbot all your 3 nodes in the federation with bootnode list valorized thank to local node id find in logs. | --bootnodes /ip4/$NODE1_IP/tcp/30333/p2p/$NODE1_LOCAL_ID --bootnodes /ip4/$NODE2_IP/tcp/30333/p2p/$NODE2_LOCAL_ID --bootnodes /ip4/$NODE3_IP/tcp/30333/p2p/$NODE3_LOCAL_ID"
