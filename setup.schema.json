@@ -1,5 +1,5 @@
 {
-    "description": "# Archipel description here",
+    "description": "# Archipel : dive and federate to run unsinkable services ! [README](https://github.com/luguslabs/archipel#archipel)",
     "type": "object",
     "properties": {
         "archipel_node_alias": {
