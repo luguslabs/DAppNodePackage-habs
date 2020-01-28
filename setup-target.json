@@ -7,6 +7,10 @@
         "type": "environment",
         "name": "ARCHIPEL_KEY_SEED"
     },
+    "archipel_chain_additional_params": {
+        "type": "environment",
+        "name": "CHAIN_ADDITIONAL_PARAMS"
+    },
     "archipel_authorities_sr25519_list": {
         "type": "environment",
         "name": "ARCHIPEL_AUTHORITIES_SR25519_LIST"
@@ -14,14 +18,6 @@
     "archipel_authorities_ed25519_list": {
         "type": "environment",
         "name": "ARCHIPEL_AUTHORITIES_ED25519_LIST"
-    },
-    "archipel_chain_additional_params": {
-        "type": "environment",
-        "name": "CHAIN_ADDITIONAL_PARAMS"
-    },
-    "archipel_chain_sudo": {
-        "type": "environment",
-        "name": "ARCHIPEL_CHAIN_SUDO"
     },
     "archipel_service": {
         "type": "environment",

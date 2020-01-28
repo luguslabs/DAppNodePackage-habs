@@ -1,1 +1,9 @@
-Archipel disclamer will be define here
+This package is not secure at all. The developement is still in progress. More secure setup will be done in the next release in our development Roadmap millestone 2. This is a proof of concept package.
+
+This software is experimental and development is still in progress, presented 'as is' and inherently carries risks. By installing it, you acknowledge that LUGUS LABS has done its best to mitigate these risks and accept to waive any liability or responsibility for LUGUS LABS in case of any shortage, discrepancy, damage, loss or destruction of any digital asset managed within this Archipel DAppNode package.
+
+This package stores private keys, which will be stored in your DAppNode. Neither LugusLabs nor the developers of this software can have access to your private key, nor can help you recover it if you lose it.
+
+You are solely responsible for keeping your private keys and password safe and to perform secure backups, as well as to restrict access to your computer and other equipment. To the extent permitted by applicable law, you agree to be responsible for all activities that have been conducted from your account. You must take all necessary steps to ensure that your private key, password, and recovery phrase remain confidential and secured.
+
+This is an Alpha version of experimental open source software released as a test version under an Apache 2 license and may contain errors and/or bugs. No guarantee or representations whatsoever is made regarding its suitability (or its use) for any purpose or regarding its compliance with any applicable laws and regulations. Use of the software is at your own risk and discretion and by using the software you acknowledge that you have read this disclaimer, understand its contents, assume all risk related thereto and hereby release, waive, discharge and covenant not to sue NodeHodlers nor LUGUS LABS or any officers, employees or affiliates from and for any direct or indirect liability resulting from the use of the software as permissible by applicable laws and regulations.
