@@ -10,22 +10,22 @@
         "archipel_key_seed": {
             "type": "string",
             "title": "Archipel Node Key Seed",
-            "description": "12 words mnemonic. <br> Can be generated with [Subkey](https://substrate.dev/docs/en/ecosystem/subkey). <br>Use for Archipel Substrate node. <br>Will be used for consensus authority and transactions propagation in the Archipel Chain."
+            "description": "12 words mnemonic. Can be generated with [Subkey](https://substrate.dev/docs/en/ecosystem/subkey). Use for Archipel Substrate node. Will be used for consensus authority and transactions propagation in the Archipel Chain."
         },  
         "archipel_chain_additional_params": {
             "type": "string",
             "title": "Archipel Node Params",
-            "description": "Parameters supported by substrate node.<br> At least, you must valorize bootnodes. To valorize bootnodes you must start nodes first and then rebbot all your 3 nodes in the federation with bootnode list valorized thank to local node id find in logs. <br>Example :<br> `--bootnodes /ip4/$NODE1_IP/tcp/30333/p2p/$NODE1_LOCAL_ID --bootnodes /ip4/$NODE2_IP/tcp/30333/p2p/$NODE2_LOCAL_ID --bootnodes /ip4/$NODE3_IP/tcp/30333/p2p/$NODE3_LOCAL_ID`"
+            "description": "Parameters supported by substrate node. At least, you must valorize bootnodes. To valorize bootnodes you must start nodes first and then rebbot all your 3 nodes in the federation with bootnode list valorized thank to local node id find in logs. Example :`--bootnodes /ip4/$NODE1_IP/tcp/30333/p2p/$NODE1_LOCAL_ID --bootnodes /ip4/$NODE2_IP/tcp/30333/p2p/$NODE2_LOCAL_ID --bootnodes /ip4/$NODE3_IP/tcp/30333/p2p/$NODE3_LOCAL_ID`"
         },      
         "archipel_authorities_sr25519_list": {
             "type": "string",
             "title": "Archipel Authorities List. SR25519 format",
-            "description": "Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in SR25519 format separated by \",\" char.<br> `<SR25519 Public Key Node 1>,<SR25519 Public Key Node 2>,<SR25519 Public Key Node 3>`"
+            "description": "Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in SR25519 format separated by \",\" char. `<SR25519 Public Key Node 1>,<SR25519 Public Key Node 2>,<SR25519 Public Key Node 3>`"
         },
         "archipel_authorities_ed25519_list": {
             "type": "string",
             "title": "Archipel Authorities List. ED25519 format",
-            "description": "Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in ED25519 format separated by \",\" char.<br>`<ED25519 Public Key Node 1>,<ED25519 Public Key Node 2>,<ED25519 Public Key Node 3>`"
+            "description": "Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in ED25519 format separated by \",\" char.`<ED25519 Public Key Node 1>,<ED25519 Public Key Node 2>,<ED25519 Public Key Node 3>`"
         },
         "archipel_service": {
             "type": "string",
@@ -52,28 +52,28 @@
         },
         "polkadot_key_gran": {
             "type": "string",
-            "name": "Session Key GRAN",
-            "description": "12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator. <br>Gran keyType, Granpa ed25519.<br> Use for consensus.<br> [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
+            "title": "Session Key GRAN",
+            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. Gran keyType, Granpa ed25519. Use for consensus. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
         },
         "polkadot_key_babe": {
             "type": "string",
-            "name": "Session Key BABE",
-            "description": "12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> Babe keyType, Babe sr25519. <br>Use for consensus/block production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
+            "title": "Session Key BABE",
+            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. Babe keyType, Babe sr25519. Use for consensus/block production. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
         },
         "polkadot_key_imon": {
             "type": "string",
-            "name": "Session Key IMON",
-            "description": "12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> IMON keyType, IamOnline key.<br> Use for heartbeat/block production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
+            "title": "Session Key IMON",
+            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. IMON keyType, IamOnline key. Use for heartbeat/block production. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
         },
         "polkadot_key_para": {
             "type": "string",
-            "name": "Session Key PARA",
-            "description": "12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> PARA keyType. sr25519. <br>Use for parachain production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
+            "title": "Session Key PARA",
+            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. PARA keyType. sr25519. Use for parachain production. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
         },
         "polkadot_key_audi": {
             "type": "string",
-            "name": "Session Key AUDI",
-            "description": "12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> AUDI keyType. sr25519.<br> Use for Audit. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
+            "title": "Session Key AUDI",
+            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. AUDI keyType. sr25519. Use for Audit. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
         }
     },
     "required": [
