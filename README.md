@@ -143,5 +143,10 @@ This project is licensed under Apache 2 - see the [LICENSE](LICENSE) file for de
 [DappNode](https://www.dappnode.io/)
 
 
+## Acknowledgements
+<p align="center">
+  <img src=./web3_foundation_grants_badge.svg width = 400>
+</p>
 
+The bootstrap development of Archipel is financed by [WEB3 Foundation](https://web3.foundation/)'s grant program [Wave4](https://medium.com/web3foundation/wrap-up-for-winter-with-our-wave-four-grant-recipients-52c27b831a6e). Thanks a lot for support.
 
