@@ -1,6 +1,7 @@
 
 # DAppNode Package Archipel
-
+![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Website archipel.id](https://img.shields.io/badge/Website-archipel.id-brightgreen.svg)](https://archipel.id/)
 [![Documentation Readme](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/luguslabs/archipel)
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/luguslabs)
