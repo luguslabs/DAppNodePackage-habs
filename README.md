@@ -1,7 +1,7 @@
 
 # DAppNode Package Archipel
 
-[![Website archipel.id](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://archipel.id/)
+[![Website archipel.id](https://img.shields.io/badge/Website-archipel.id-brightgreen.svg)](https://archipel.id/)
 [![Documentation Readme](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/luguslabs/archipel)
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/luguslabs)
 
