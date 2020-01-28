@@ -48,7 +48,7 @@
             "type": "string",
             "title": "Polkadot prefix",
             "description": "This prefix is used to mount the docker volume for blockchain state on the server.",
-            "default":"kusama-data"
+            "default":"kusama-data-"
         },
         "polkadot_key_gran": {
             "type": "string",

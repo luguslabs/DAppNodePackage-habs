@@ -1,8 +1,49 @@
-# DAppNodePackage-archipel
-Archipel package for DAppNode 
 
+# DAppNode Package Archipel
 
-### Configuration parameters
+[![Website archipel.id](https://img.shields.io/badge/Website-dappnode.io-brightgreen.svg)](https://archipel.id/)
+[![Documentation Readme](https://img.shields.io/badge/Documentation-Wiki-brightgreen.svg)](https://github.com/luguslabs/archipel)
+[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/luguslabs)
+
+Dappnode package responsible for providing the Archipel service.
+
+Actually based on version .... of [Archipel](https://github.com/luguslabs/archipel)
+
+It is an AragonApp whose repo is deployed at this address: [xxxxx ](https://etherscan.io/address/xxxx) and whose ENS address is: [archipel.public.dappnode.eth](https://etherscan.io/enslookup?q=archipel.public.dappnode.eth])
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- git
+
+  Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
+
+- docker
+
+  Install [docker](https://docs.docker.com/engine/installation). The community edition (docker-ce) will work. In Linux make sure you grant permissions to the current user to use docker by adding current user to docker group, `sudo usermod -aG docker $USER`. Once you update the users group, exit from the current terminal and open a new one to make effect.
+
+- docker-compose
+
+  Install [docker-compose](https://docs.docker.com/compose/install)
+
+**Note**: Make sure you can run `git`, `docker ps`, `docker-compose` without any issue and without sudo command.
+
+### Building
+
+```
+$ git clone https://github.com/luguslabs/DAppNodePackage-archipel
+```
+
+```
+$ docker-compose build
+or
+$ docker build --rm -f build/Dockerfile -t dnp_archipel:dev build
+```
+
+### Configuration env parameters needed
 
 | Variable | Description | Values |
 |----------|-------------|--------|
@@ -20,3 +61,86 @@ Archipel package for DAppNode
 | `POLKADOT_KEY_IMON` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> IMON keyType, IamOnline key.<br> Use for heartbeat/block production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
 | `POLKADOT_KEY_PARA` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> PARA keyType. sr25519. <br>Use for parachain production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
 | `POLKADOT_KEY_AUDI` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> AUDI keyType. sr25519.<br> Use for Audit. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
+
+
+## Running
+
+### Start
+
+```
+$ docker-compose up -d
+```
+
+### Stop
+
+```
+$ docker-compose down
+```
+
+### Status
+
+```
+$ docker-compose ps
+```
+
+### Logs
+
+```
+$ docker-compose logs -f
+```
+
+**Note**:
+There is a time drift issue on Docker for Mac, to solve it try running [Fixing Time drift issue on Docker for Mac](https://blog.shameerc.com/2017/03/quick-tip-fixing-time-drift-issue-on-docker-for-mac):
+
+```
+$ docker run --rm --privileged alpine hwclock -s
+```
+
+## Generating a tar.xz image
+
+[xz](https://tukaani.org/xz/) is required
+
+```
+$ docker save dnp_archipel:dev | xz -e9vT0 > dnp_archipel_dev.tar.xz
+```
+
+You can download the latest tar.xz version from here [releases](https://github.com/luguslabs/archipel/releases).
+
+### Loading a Docker image
+
+```
+$docker load -i dnp_archipel_dev.tar.xz
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](TBD) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/luguslabs/archipel/tags).
+
+## Authors
+
+- **Vladimir Ostapenco** - _Initial work_ - [vladostp](https://github.com/vladostp)
+- **Francois Branciard** - _Initial work_ - [branciard](https://github.com/branciard)
+
+See also the list of [contributors](https://github.com/luguslabs/archipel/contributors) who participated in this project.
+
+## License
+
+This project is licensed under Apache 2 - see the [LICENSE](LICENSE) file for details
+
+## References
+
+[git](https://git-scm.com/)
+
+[docker](https://www.docker.com/)
+
+[docker-compose](https://docs.docker.com/compose/)
+
+[DappNode](https://www.dappnode.io/)
+
+
+
+
