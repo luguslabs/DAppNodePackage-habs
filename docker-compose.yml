@@ -1,6 +1,7 @@
 version: '3.4'
 services:
   archipel.public.dappnode.eth:
+    privileged: true
     build: ./build
     image: 'archipel.public.dappnode.eth:0.0.2'
     volumes:
@@ -8,7 +9,17 @@ services:
       - '/var/run/docker.sock:/var/run/docker.sock'
     ports:
       - '30333:30333'
+      - '51820:51820'
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
     environment:
+      - WIREGUARD_PRIVATE_KEY=
+      - WIREGUARD_ADDRESS=
+      - WIREGUARD_LISTEN_PORT=51820
+      - WIREGUARD_PEERS_PUB_ADDR=
+      - WIREGUARD_PEERS_ALLOWED_IP=
+      - WIREGUARD_PEERS_EXTERNAL_ADDR=
       - ARCHIPEL_NODE_ALIAS=
       - ARCHIPEL_KEY_SEED=
       - ARCHIPEL_CHAIN_ADDITIONAL_PARAMS=
