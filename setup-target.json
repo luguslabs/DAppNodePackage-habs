@@ -45,7 +45,7 @@
     },
     "archipel_chain_additional_params": {
         "type": "environment",
-        "name": "CHAIN_ADDITIONAL_PARAMS"
+        "name": "ARCHIPEL_CHAIN_ADDITIONAL_PARAMS"
     },
     "archipel_authorities_sr25519_list": {
         "type": "environment",
