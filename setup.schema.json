@@ -2,16 +2,63 @@
     "description": "Archipel Configuration. You must configure folowing parameters to start the Archipel Chain and also a Polkadot node. [README](https://github.com/luguslabs/archipel#archipel)",
     "type": "object",
     "properties": {
+        "wireguard_private_key": {
+            "type": "string",
+            "title": "WIREGUARD_PRIVATE_KEY",
+            "description": "WIREGUARD_PRIVATE_KEY"
+        },
+        "wireguard_address": {
+            "type": "string",
+            "title": "WIREGUARD_ADDRESS",
+            "description": "WIREGUARD_ADDRESS"
+        },
+        "wireguard_listen_port": {
+            "type": "string",
+            "title": "WIREGUARD_LISTEN_PORT",
+            "description": "WIREGUARD_LISTEN_PORT",
+            "default":"51820"
+        },
+        "wireguard_peers_pub_addr": {
+            "type": "string",
+            "title": "WIREGUARD_PEERS_PUB_ADDR",
+            "description": "WIREGUARD_PEERS_PUB_ADDR"
+        },
+        "wireguard_peers_allowed_ip": {
+            "type": "string",
+            "title": "WIREGUARD_PEERS_ALLOWED_IP",
+            "description": "WIREGUARD_PEERS_ALLOWED_IP"
+        },
+        "wireguard_peers_external_addr": {
+            "type": "string",
+            "title": "WIREGUARD_PEERS_EXTERNAL_ADDR",
+            "description": "WIREGUARD_PEERS_EXTERNAL_ADDR"
+        },
         "archipel_node_alias": {
             "type": "string",
             "title": "Archipel Node Alias",
             "description": "Node name for the Archipel Substrate node within the federation."
+        },
+        "archipel_listen_port": {
+            "type": "string",
+            "title": "Archipel Listen Port",
+            "description": "Substrate --port option"
         },
         "archipel_key_seed": {
             "type": "string",
             "title": "Archipel Node Key Seed",
             "description": "12 words mnemonic. Can be generated with [Subkey](https://substrate.dev/docs/en/ecosystem/subkey). Use for Archipel Substrate node. Will be used for consensus authority and transactions propagation in the Archipel Chain."
         },  
+        "archipel_node_key_filename": {
+            "type": "string",
+            "title": "ARCHIPEL_NODE_KEY_FILE name",
+            "description": "ARCHIPEL_NODE_KEY_FILE name"
+        }, 
+        "archipel_node_key_file": {
+            "type": "string",
+            "format": "data-url",
+            "title": "ARCHIPEL_NODE_KEY_FILE",
+            "description": "ARCHIPEL_NODE_KEY_FILE"
+          },
         "archipel_chain_additional_params": {
             "type": "string",
             "title": "Archipel Node Params",
@@ -74,6 +121,27 @@
             "type": "string",
             "title": "Session Key AUDI",
             "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. AUDI keyType. sr25519. Use for Audit. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
+        },
+        "polkadot_node_key_filename": {
+            "type": "string",
+            "title": "POLKADOT_NODE_KEY_FILE name",
+            "description": "POLKADOT_NODE_KEY_FILE name"
+        },
+        "polkadot_node_key_file": {
+            "type": "string",
+            "format": "data-url",
+            "title": "POLKADOT_NODE_KEY_FILE",
+            "description": "POLKADOT_NODE_KEY_FILE"
+        },
+        "polkadot_reserved_nodes": {
+            "type": "string",
+            "title": "POLKADOT_RESERVED_NODES",
+            "description": "POLKADOT_RESERVED_NODES"
+        },
+        "polkadot_telemetry_url": {
+            "type": "string",
+            "title": "POLKADOT_TELEMETRY_URL",
+            "description": "POLKADOT_TELEMETRY_URL"
         }
     },
     "required": [

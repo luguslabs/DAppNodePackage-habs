@@ -1,11 +1,47 @@
 {
+    "wireguard_private_key": {
+        "type": "environment",
+        "name": "WIREGUARD_PRIVATE_KEY"
+    },
+    "wireguard_address": {
+        "type": "environment",
+        "name": "WIREGUARD_ADDRESS"
+    },
+    "wireguard_listen_port": {
+        "type": "environment",
+        "name": "WIREGUARD_LISTEN_PORT"
+    },
+    "wireguard_peers_pub_addr": {
+        "type": "environment",
+        "name": "WIREGUARD_PEERS_PUB_ADDR"
+    },
+    "wireguard_peers_allowed_ip": {
+        "type": "environment",
+        "name": "WIREGUARD_PEERS_ALLOWED_IP"
+    },
+    "wireguard_peers_external_addr": {
+        "type": "environment",
+        "name": "WIREGUARD_PEERS_EXTERNAL_ADDR"
+    },
     "archipel_node_alias": {
         "type": "environment",
         "name": "ARCHIPEL_NODE_ALIAS"
     },
+    "archipel_listen_port": {
+        "type": "environment",
+        "name": "ARCHIPEL_LISTEN_PORT"
+    },
     "archipel_key_seed": {
         "type": "environment",
         "name": "ARCHIPEL_KEY_SEED"
+    },
+    "archipel_node_key_filename": {
+        "type": "environment",
+        "name": "ARCHIPEL_NODE_KEY_FILE"
+    },
+    "archipel_node_key_file": {
+        "type": "fileUpload",
+        "path": "/keys/archipel_node_key_file"
     },
     "archipel_chain_additional_params": {
         "type": "environment",
@@ -54,5 +90,21 @@
     "polkadot_key_audi": {
         "type": "environment",
         "name": "POLKADOT_KEY_AUDI"
+    },
+    "polkadot_node_key_filename": {
+        "type": "environment",
+        "name": "POLKADOT_NODE_KEY_FILE"
+    },
+    "polkadot_node_key_file": {
+        "type": "fileUpload",
+        "path": "/keys/polkadot_node_key_file"
+    },
+    "polkadot_reserved_nodes": {
+        "type": "environment",
+        "name": "POLKADOT_RESERVED_NODES"
+    },
+    "polkadot_telemetry_url": {
+        "type": "environment",
+        "name": "POLKADOT_TELEMETRY_URL"
     }
 }

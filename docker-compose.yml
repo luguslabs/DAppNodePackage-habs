@@ -7,6 +7,7 @@ services:
     volumes:
       - 'data:/root/chain/data'
       - '/var/run/docker.sock:/var/run/docker.sock'
+      - 'keys:/keys'
     ports:
       - '30333:30333'
       - '51820:51820'
@@ -18,10 +19,12 @@ services:
       - WIREGUARD_ADDRESS=
       - WIREGUARD_LISTEN_PORT=51820
       - WIREGUARD_PEERS_PUB_ADDR=
-      - WIREGUARD_PEERS_ALLOWED_IP=
+      - 'WIREGUARD_PEERS_ALLOWED_IP=10.0.1.1/32,10.0.1.2/32,10.0.1.3/32'
       - WIREGUARD_PEERS_EXTERNAL_ADDR=
       - ARCHIPEL_NODE_ALIAS=
+      - ARCHIPEL_LISTEN_PORT=30333
       - ARCHIPEL_KEY_SEED=
+      - ARCHIPEL_NODE_KEY_FILE=archipel_node_key_file
       - ARCHIPEL_CHAIN_ADDITIONAL_PARAMS=
       - ARCHIPEL_AUTHORITIES_SR25519_LIST=
       - ARCHIPEL_AUTHORITIES_ED25519_LIST=
@@ -34,6 +37,10 @@ services:
       - POLKADOT_KEY_IMON=
       - POLKADOT_KEY_PARA=
       - POLKADOT_KEY_AUDI=
+      - POLKADOT_NODE_KEY_FILE=polkadot_node_key_file
+      - POLKADOT_RESERVED_NODES=
+      - POLKADOT_TELEMETRY_URL=
     restart: always
 volumes:
   data: {}
+  keys: {}
