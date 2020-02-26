@@ -142,17 +142,12 @@
             "type": "string",
             "title": "POLKADOT_TELEMETRY_URL",
             "description": "POLKADOT_TELEMETRY_URL"
+        },
+        "polkadot_launch_in_vpn": {
+            "type": "string",
+            "title": "POLKADOT_LAUNCH_IN_VPN",
+            "description": "POLKADOT_LAUNCH_IN_VPN"
         }
-    },
-    "required": [
-        "archipel_node_alias",
-        "archipel_key_seed",
-        "archipel_authorities_sr25519_list",
-        "archipel_authorities_ed25519_list",
-        "archipel_service",
-        "polkadot_name",
-        "polkadot_image",   
-        "polkadot_prefix"
-    ]
+    }
 }
 

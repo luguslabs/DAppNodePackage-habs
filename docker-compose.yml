@@ -6,6 +6,7 @@ services:
     volumes:
       - 'data:/root/chain/data'
       - '/var/run/docker.sock:/var/run/docker.sock'
+      - 'service:/service'
       - 'keys:/keys'
     ports:
       - '51820:51820/udp'
@@ -39,7 +40,9 @@ services:
       - POLKADOT_NODE_KEY_FILE=polkadot_node_key_file
       - POLKADOT_RESERVED_NODES=
       - POLKADOT_TELEMETRY_URL=
+      - POLKADOT_LAUNCH_IN_VPN=true
     restart: always
 volumes:
   data: {}
+  service: {}
   keys: {}

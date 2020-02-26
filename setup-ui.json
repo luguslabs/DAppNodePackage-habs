@@ -26,7 +26,8 @@
         "polkadot_node_key_filename",
         "polkadot_node_key_file",
         "polkadot_reserved_nodes",
-        "polkadot_telemetry_url"
+        "polkadot_telemetry_url",
+        "polkadot_launch_in_vpn"
     ]
 }
 
