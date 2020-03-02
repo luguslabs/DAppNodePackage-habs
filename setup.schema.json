@@ -2,152 +2,24 @@
     "description": "Archipel Configuration. You must configure folowing parameters to start the Archipel Chain and also a Polkadot node. [README](https://github.com/luguslabs/archipel#archipel)",
     "type": "object",
     "properties": {
-        "wireguard_private_key": {
-            "type": "string",
-            "title": "WIREGUARD_PRIVATE_KEY",
-            "description": "WIREGUARD_PRIVATE_KEY"
-        },
-        "wireguard_address": {
-            "type": "string",
-            "title": "WIREGUARD_ADDRESS",
-            "description": "WIREGUARD_ADDRESS"
-        },
-        "wireguard_listen_port": {
-            "type": "string",
-            "title": "WIREGUARD_LISTEN_PORT",
-            "description": "WIREGUARD_LISTEN_PORT",
-            "default":"51820"
-        },
-        "wireguard_peers_pub_addr": {
-            "type": "string",
-            "title": "WIREGUARD_PEERS_PUB_ADDR",
-            "description": "WIREGUARD_PEERS_PUB_ADDR"
-        },
-        "wireguard_peers_allowed_ip": {
-            "type": "string",
-            "title": "WIREGUARD_PEERS_ALLOWED_IP",
-            "description": "WIREGUARD_PEERS_ALLOWED_IP"
-        },
-        "wireguard_peers_external_addr": {
-            "type": "string",
-            "title": "WIREGUARD_PEERS_EXTERNAL_ADDR",
-            "description": "WIREGUARD_PEERS_EXTERNAL_ADDR"
-        },
-        "archipel_node_alias": {
-            "type": "string",
-            "title": "Archipel Node Alias",
-            "description": "Node name for the Archipel Substrate node within the federation."
-        },
-        "archipel_listen_port": {
-            "type": "string",
-            "title": "Archipel Listen Port",
-            "description": "Substrate --port option"
-        },
-        "archipel_key_seed": {
-            "type": "string",
-            "title": "Archipel Node Key Seed",
-            "description": "12 words mnemonic. Can be generated with [Subkey](https://substrate.dev/docs/en/ecosystem/subkey). Use for Archipel Substrate node. Will be used for consensus authority and transactions propagation in the Archipel Chain."
-        },  
-        "archipel_node_key_filename": {
-            "type": "string",
-            "title": "ARCHIPEL_NODE_KEY_FILE name",
-            "description": "ARCHIPEL_NODE_KEY_FILE name"
-        }, 
-        "archipel_node_key_file": {
+        "config_file_zip": {
             "type": "string",
             "format": "data-url",
-            "title": "ARCHIPEL_NODE_KEY_FILE",
-            "description": "ARCHIPEL_NODE_KEY_FILE"
-          },
-        "archipel_chain_additional_params": {
-            "type": "string",
-            "title": "Archipel Node Params",
-            "description": "Parameters supported by substrate node. At least, you must valorize bootnodes. To valorize bootnodes you must start nodes first and then rebbot all your 3 nodes in the federation with bootnode list valorized thank to local node id find in logs. Example :`--bootnodes /ip4/$NODE1_IP/tcp/30333/p2p/$NODE1_LOCAL_ID --bootnodes /ip4/$NODE2_IP/tcp/30333/p2p/$NODE2_LOCAL_ID --bootnodes /ip4/$NODE3_IP/tcp/30333/p2p/$NODE3_LOCAL_ID`"
-        },      
-        "archipel_authorities_sr25519_list": {
-            "type": "string",
-            "title": "Archipel Authorities List. SR25519 format",
-            "description": "Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in SR25519 format separated by \",\" char. `<SR25519 Public Key Node 1>,<SR25519 Public Key Node 2>,<SR25519 Public Key Node 3>`"
+            "title": "Archipel Zip Config File",
+            "description": "Config File Zip to upload"
         },
-        "archipel_authorities_ed25519_list": {
+        "config_file_password": {
             "type": "string",
-            "title": "Archipel Authorities List. ED25519 format",
-            "description": "Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in ED25519 format separated by \",\" char.`<ED25519 Public Key Node 1>,<ED25519 Public Key Node 2>,<ED25519 Public Key Node 3>`"
+            "title": "Archipel Zip Config File Password",
+            "description": "Optional password for the Archipel Zip Config File"
         },
-        "archipel_service": {
+        "node_id": {
             "type": "string",
-            "title": "Archipel Service",
-            "description": "External service you want to launch. Only support `polkadot` at the moment.",
-            "default":"polkadot"
-        },
-        "polkadot_name": {
-            "type": "string",
-            "title": "Polkadot Name",
-            "description": "Node name for the polkadot node. Will be visible in [Polkadot telemetry](https://telemetry.polkadot.io/). This Node Name will a a -passive or -active suffix according to the current mode. <br>Example<br>`Archipel-yourFederationName-NodeNameHere` "
-        },
-        "polkadot_image": {
-            "type": "string",
-            "title": "Polkadot image",
-            "description": "Polkadot docker image version to use. parity/polkadot:latest",
-            "default":"parity/polkadot:latest"
-        },
-        "polkadot_prefix": {
-            "type": "string",
-            "title": "Polkadot prefix",
-            "description": "This prefix is used to mount the docker volume for blockchain state on the server.",
-            "default":"kusama-data-"
-        },
-        "polkadot_key_gran": {
-            "type": "string",
-            "title": "Session Key GRAN",
-            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. Gran keyType, Granpa ed25519. Use for consensus. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
-        },
-        "polkadot_key_babe": {
-            "type": "string",
-            "title": "Session Key BABE",
-            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. Babe keyType, Babe sr25519. Use for consensus/block production. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
-        },
-        "polkadot_key_imon": {
-            "type": "string",
-            "title": "Session Key IMON",
-            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. IMON keyType, IamOnline key. Use for heartbeat/block production. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
-        },
-        "polkadot_key_para": {
-            "type": "string",
-            "title": "Session Key PARA",
-            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. PARA keyType. sr25519. Use for parachain production. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
-        },
-        "polkadot_key_audi": {
-            "type": "string",
-            "title": "Session Key AUDI",
-            "description": "12 words mnemonic. Polkadot Sessions keys needed to operate as validator. AUDI keyType. sr25519. Use for Audit. [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)"
-        },
-        "polkadot_node_key_filename": {
-            "type": "string",
-            "title": "POLKADOT_NODE_KEY_FILE name",
-            "description": "POLKADOT_NODE_KEY_FILE name"
-        },
-        "polkadot_node_key_file": {
-            "type": "string",
-            "format": "data-url",
-            "title": "POLKADOT_NODE_KEY_FILE",
-            "description": "POLKADOT_NODE_KEY_FILE"
-        },
-        "polkadot_reserved_nodes": {
-            "type": "string",
-            "title": "POLKADOT_RESERVED_NODES",
-            "description": "POLKADOT_RESERVED_NODES"
-        },
-        "polkadot_telemetry_url": {
-            "type": "string",
-            "title": "POLKADOT_TELEMETRY_URL",
-            "description": "POLKADOT_TELEMETRY_URL"
-        },
-        "polkadot_launch_in_vpn": {
-            "type": "string",
-            "title": "POLKADOT_LAUNCH_IN_VPN",
-            "description": "POLKADOT_LAUNCH_IN_VPN"
+            "title": "NODE ID",
+            "description": "Archipel Config Node choice. Must be 1 or 2 or 3",
+            "default": "1",
+            "enum": ["1", "2", "3"]
         }
-    }
+    },
+    "required": ["config_file_zip","node_id"]
 }
-

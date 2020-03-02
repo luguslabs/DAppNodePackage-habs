@@ -1,33 +1,6 @@
 {
-    "ui:order": [
-        "wireguard_private_key",
-        "wireguard_address",
-        "wireguard_listen_port",
-        "wireguard_peers_pub_addr",
-        "wireguard_peers_allowed_ip",
-        "wireguard_peers_external_addr",
-        "archipel_node_alias",
-        "archipel_listen_port",
-        "archipel_key_seed", 
-        "archipel_node_key_filename",
-        "archipel_node_key_file",
-        "archipel_chain_additional_params",    
-        "archipel_authorities_sr25519_list",
-        "archipel_authorities_ed25519_list",
-        "archipel_service",
-        "polkadot_name",
-        "polkadot_image",
-        "polkadot_prefix",
-        "polkadot_key_gran",
-        "polkadot_key_babe",
-        "polkadot_key_imon",
-        "polkadot_key_para",
-        "polkadot_key_audi",
-        "polkadot_node_key_filename",
-        "polkadot_node_key_file",
-        "polkadot_reserved_nodes",
-        "polkadot_telemetry_url",
-        "polkadot_launch_in_vpn"
-    ]
-}
-
+    "ui:order": ["config_file_zip", "config_file_password","node_id"],
+    "config_file_password": {
+      "ui:widget": "password"
+    }
+  }

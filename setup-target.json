@@ -1,114 +1,14 @@
 {
-    "wireguard_private_key": {
-        "type": "environment",
-        "name": "WIREGUARD_PRIVATE_KEY"
-    },
-    "wireguard_address": {
-        "type": "environment",
-        "name": "WIREGUARD_ADDRESS"
-    },
-    "wireguard_listen_port": {
-        "type": "environment",
-        "name": "WIREGUARD_LISTEN_PORT"
-    },
-    "wireguard_peers_pub_addr": {
-        "type": "environment",
-        "name": "WIREGUARD_PEERS_PUB_ADDR"
-    },
-    "wireguard_peers_allowed_ip": {
-        "type": "environment",
-        "name": "WIREGUARD_PEERS_ALLOWED_IP"
-    },
-    "wireguard_peers_external_addr": {
-        "type": "environment",
-        "name": "WIREGUARD_PEERS_EXTERNAL_ADDR"
-    },
-    "archipel_node_alias": {
-        "type": "environment",
-        "name": "ARCHIPEL_NODE_ALIAS"
-    },
-    "archipel_listen_port": {
-        "type": "environment",
-        "name": "ARCHIPEL_LISTEN_PORT"
-    },
-    "archipel_key_seed": {
-        "type": "environment",
-        "name": "ARCHIPEL_KEY_SEED"
-    },
-    "archipel_node_key_filename": {
-        "type": "environment",
-        "name": "ARCHIPEL_NODE_KEY_FILE"
-    },
-    "archipel_node_key_file": {
+    "config_file_zip": {
         "type": "fileUpload",
-        "path": "/keys/archipel_node_key_file"
+        "path": "/config/archipel-config.zip"
     },
-    "archipel_chain_additional_params": {
+    "config_file_password": {
         "type": "environment",
-        "name": "ARCHIPEL_CHAIN_ADDITIONAL_PARAMS"
+        "name": "CONFIG_FILE_PASSWORD"
     },
-    "archipel_authorities_sr25519_list": {
+    "node_id": {
         "type": "environment",
-        "name": "ARCHIPEL_AUTHORITIES_SR25519_LIST"
-    },
-    "archipel_authorities_ed25519_list": {
-        "type": "environment",
-        "name": "ARCHIPEL_AUTHORITIES_ED25519_LIST"
-    },
-    "archipel_service": {
-        "type": "environment",
-        "name": "SERVICE"
-    },
-    "polkadot_name": {
-        "type": "environment",
-        "name": "POLKADOT_NAME"
-    },
-    "polkadot_image": {
-        "type": "environment",
-        "name": "POLKADOT_IMAGE"
-    },
-    "polkadot_prefix": {
-        "type": "environment",
-        "name": "POLKADOT_PREFIX"
-    },
-    "polkadot_key_gran": {
-        "type": "environment",
-        "name": "POLKADOT_KEY_GRAN"
-    },
-    "polkadot_key_babe": {
-        "type": "environment",
-        "name": "POLKADOT_KEY_BABE"
-    },
-    "polkadot_key_imon": {
-        "type": "environment",
-        "name": "POLKADOT_KEY_IMON"
-    },
-    "polkadot_key_para": {
-        "type": "environment",
-        "name": "POLKADOT_KEY_PARA"
-    },
-    "polkadot_key_audi": {
-        "type": "environment",
-        "name": "POLKADOT_KEY_AUDI"
-    },
-    "polkadot_node_key_filename": {
-        "type": "environment",
-        "name": "POLKADOT_NODE_KEY_FILE"
-    },
-    "polkadot_node_key_file": {
-        "type": "fileUpload",
-        "path": "/keys/polkadot_node_key_file"
-    },
-    "polkadot_reserved_nodes": {
-        "type": "environment",
-        "name": "POLKADOT_RESERVED_NODES"
-    },
-    "polkadot_telemetry_url": {
-        "type": "environment",
-        "name": "POLKADOT_TELEMETRY_URL"
-    },
-    "polkadot_launch_in_vpn": {
-        "type": "environment",
-        "name": "POLKADOT_LAUNCH_IN_VPN"
+        "name": "NODE_ID"
     }
 }
