@@ -53,13 +53,6 @@ $ docker build --rm -f build/Dockerfile -t dnp_archipel:dev build
 | `CONFIG_FILE_PASSWORD` | Optional password to encryp Configuration Zip File | string |
 | `NODE_ID` | select wanted instance number to target the right configuration in Zip Configuration File | 1 or 2 or 3 |
 
-      - WIREGUARD_PRIVATE_KEY=
-      - WIREGUARD_ADDRESS=
-      - =
-      - WIREGUARD_PEERS_PUB_ADDR=
-      - WIREGUARD_PEERS_ALLOWED_IP=
-      - WIREGUARD_PEERS_EXTERNAL_ADDR=
-
 ### Advanced Configuration env to overwrite
 
 | Variable | Description | Values |
