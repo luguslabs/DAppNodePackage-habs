@@ -2,13 +2,15 @@
   "name": "archipel.public.dappnode.eth",
   "version": "0.0.2",
   "upstreamVersion": "v0.0.1(commitffecdbf)",
-  "shortDescription": "Archipel : Divide and federate to run unsinkable services. Welcome aboard to all cloud shipwrecks !",
+  "shortDescription": "Archipel : Divide and federate to run unsinkable services. Welcome aboard to all cloud shipwrecked !",
   "description": "Archipel goal is to assure HA (High-Availbility) for services on decentralized infrastructures by federating several DAppNodes. [README](https://github.com/luguslabs/archipel#archipel)",
   "requirements": {
     "minimumDappnodeVersion": "0.2.19"
   },
   "type": "service",
-  "dependencies": {},
+  "dependencies": {
+    "Qmf8wpFZauuAcCJH7Ww5Qbuim2MTuTiNT7WRcpLFsv55CD": "Qmf8wpFZauuAcCJH7Ww5Qbuim2MTuTiNT7WRcpLFsv55CD"
+ },
   "author": "Lugus Labs (https://github.com/luguslabs)",
   "contributors": [
     "Francois Branciard (https://github.com/branciard)",
@@ -17,6 +19,7 @@
   "categories": [
     "Developer tools"
   ],
+  
   "links": {
     "homepage": "https://github.com/luguslabs/DAppNodePackage-archipel.git"
   },

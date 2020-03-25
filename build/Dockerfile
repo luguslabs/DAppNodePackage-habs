@@ -1,1 +1,1 @@
-FROM luguslabs/archipel-with-wireguard:test
+FROM luguslabs/archipel:test
