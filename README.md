@@ -50,6 +50,7 @@ $ docker build --rm -f build/Dockerfile -t dnp_archipel:dev build
 ### Environment Variables
 
 #### With config file
+The ZIP config file can be generate with [archipel CLI](https://github.com/luguslabs/archipel/tree/master/cli#use)
 | Variable | Description | Values |
 |----------|-------------|--------|
 | `CONFIG_FILE` |Try to load configuration from configuration archive or not. | boolean |
