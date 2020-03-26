@@ -61,6 +61,7 @@ $ docker build --rm -f build/Dockerfile -t dnp_archipel:dev build
 | Variable | Description | Values |
 |----------|-------------|--------|
 | `WIREGUARD_PRIVATE_KEY` | Wireguard private key. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | String |
+| `WIREGUARD_PEERS_PUB_ADDR` | Wireguard public key. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | String |
 | `WIREGUARD_ADDRESS` | Wireguard address in the wireguard private network. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | 10.0.1.n/32 |
 | `WIREGUARD_LISTEN_PORT` | Port UDP of the private network. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | 51820 |
 | `WIREGUARD_PEERS_ALLOWED_IP` | all peers address in the private network separate by `,`. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | 10.0.1.1/32,10.0.1.2/32,10.0.1.3/32 |
@@ -88,6 +89,7 @@ $ docker build --rm -f build/Dockerfile -t dnp_archipel:dev build
 | `POLKADOT_TELEMETRY_URL` | Optional TELEMETRY_URL for Polkadot Node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit` | URL or `--no-telemetry` |
 | `POLKADOT_LAUNCH_IN_VPN` | Use wireguard network for Polkadot | true |
 | `POLKADOT_SIMULATE_SYNCH` | Use for testing purpuse to not wait Kusama to be synch to test active/passive switches| false 
+| `POLKADOT_ADDITIONAL_OPTIONS` | all others polkadot commands can be set in this env varibale separated with a space | --option1 value1 --options2 value2  
 
 
 

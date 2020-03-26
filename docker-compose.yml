@@ -47,6 +47,7 @@ services:
       - POLKADOT_TELEMETRY_URL=
       - POLKADOT_LAUNCH_IN_VPN=true
       - POLKADOT_SIMULATE_SYNCH=false
+      - POLKADOT_ADDITIONAL_OPTIONS=--db-cache 512
     restart: always
 volumes:
   data: {}
