@@ -8,7 +8,7 @@
 
 Dappnode package responsible for providing the Archipel service.
 
-Actually based on version [v0.0.2](https://github.com/luguslabs/archipel/releases/tag/v0.0.2) of [Archipel](https://github.com/luguslabs/archipel)
+Actually based on version [v1.0.0](https://github.com/luguslabs/archipel/releases/tag/v1.0.0) of [Archipel](https://github.com/luguslabs/archipel)
 
 It is an AragonApp whose repo is deployed at this address: [0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a ](https://etherscan.io/address/0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a) and whose ENS address is: [archipel.public.dappnode.eth](https://etherscan.io/enslookup?q=archipel.public.dappnode.eth])
 
