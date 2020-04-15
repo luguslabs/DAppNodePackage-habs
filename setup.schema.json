@@ -29,12 +29,12 @@
         "archipel_telemetry_url": {
             "type": "string",
             "title": "Archipel TELEMETRY URL",
-            "description": " Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit`. Can be an url list separated by `,`. Possible values = empty or URL(s) or `--no-telemetry` "
+            "description": " Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry`"
          },
          "polkadot_telemetry_url": {
             "type": "string",
             "title": "Polkadot TELEMETRY URL",
-            "description": " Optional TELEMETRY_URL for Polkadot Node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit`. Can be an url list separated by `,`. Possible values = empty or URL(s) or `--no-telemetry` "
+            "description": " Optional TELEMETRY_URL for Polkadot Node.  Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry` "
          }
     },
     "required": ["config_file_zip","node_id"]
