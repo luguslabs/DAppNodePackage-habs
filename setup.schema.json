@@ -19,7 +19,23 @@
             "description": "Archipel Config Node choice. Must be 1 or 2 or 3",
             "default": "1",
             "enum": ["1", "2", "3"]
-        }
+        },
+        "archipel_suspend_service": {
+            "type": "string",
+            "title": "Suspend Orchestration",
+            "description": "If true the service node is never switch to active and remains passive. For instance, may be usefull to wait for all nodes to be synch before orchestrate and define a leader to operate as active node.",
+            "default": "false"
+        },
+        "archipel_telemetry_url": {
+            "type": "string",
+            "title": "Archipel TELEMETRY URL",
+            "description": " Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit`. Can be an url list separated by `,`. Possible values = empty or URL(s) or `--no-telemetry` "
+         },
+         "polkadot_telemetry_url": {
+            "type": "string",
+            "title": "Polkadot TELEMETRY URL",
+            "description": " Optional TELEMETRY_URL for Polkadot Node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit`. Can be an url list separated by `,`. Possible values = empty or URL(s) or `--no-telemetry` "
+         }
     },
     "required": ["config_file_zip","node_id"]
 }

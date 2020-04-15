@@ -1,5 +1,5 @@
 {
-    "ui:order": ["config_file_zip", "config_file_password","node_id"],
+    "ui:order": ["config_file_zip", "config_file_password", "node_id", "archipel_suspend_service", "archipel_telemetry_url", "polkadot_telemetry_url"],
     "config_file_password": {
       "ui:widget": "password"
     }

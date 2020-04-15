@@ -10,5 +10,17 @@
     "node_id": {
         "type": "environment",
         "name": "NODE_ID"
+    },
+    "archipel_suspend_service": {
+        "type": "environment",
+        "name": "ARCHIPEL_SUSPEND_SERVICE"
+    },
+    "archipel_telemetry_url": {
+        "type": "environment",
+        "name": "ARCHIPEL_TELEMETRY_URL"
+    },
+    "polkadot_telemetry_url": {
+        "type": "environment",
+        "name": "POLKADOT_TELEMETRY_URL"
     }
 }
