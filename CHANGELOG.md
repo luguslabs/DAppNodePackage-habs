@@ -4,6 +4,25 @@
 
 <!--New features/improvements/fixes go here-->
 
+## [v1.0.2](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v1.0.2)
+
+
+  ✔ Fetch current version from APM (next version: 1.0.2)
+  ✔ Build and upload
+  ✔ Generate transaction
+
+  DNP (DAppNode Package) published (version 1.0.2) 
+  Manifest hash : /ipfs/QmckpnazRLanmR2wfEFRiMDNDaUNnDzCTSzRGp1XfL3rfd
+  http://my.dappnode/#/installer/%2Fipfs%2FQmckpnazRLanmR2wfEFRiMDNDaUNnDzCTSzRGp1XfL3rfd
+
+  You can also execute this transaction with Metamask by following this pre-filled link
+  
+  http://my.dappnode/#/sdk/publish/r=archipel.public.dappnode.eth&v=1.0.2&h=%2Fipfs%2FQmckpnazRLanmR2wfEFRiMDNDaUNnDzCTSzRGp1XfL3rfd
+
+ Published new version of this DNP :  
+
+https://etherscan.io/tx/0x79a734f0e01a9630d347695e7b2c4aea828a188649d259c6f4419333d56439d9
+
 
 ## [v1.0.1](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v1.0.1)
 
