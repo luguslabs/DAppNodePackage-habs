@@ -22,5 +22,13 @@
       "dappnode": "Mon, 30 Mar 2020 15:08:47 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=archipel.public.dappnode.eth&v=1.0.0&h=%2Fipfs%2FQmXvCAAtrA9uBoarW6srVy3RWNo7insxXYKcomjEP19Cgf"
+  },
+  "1.0.1": {
+    "hash": "/ipfs/QmQLd1wHXcQJEJcPAJBw2Nw54krh4Y5t3bMcMoCf4BMij3",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Thu, 16 Apr 2020 12:47:21 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=archipel.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmQLd1wHXcQJEJcPAJBw2Nw54krh4Y5t3bMcMoCf4BMij3"
   }
 }

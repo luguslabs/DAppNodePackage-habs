@@ -1,0 +1,46 @@
+# Change Log
+
+## Unreleased
+
+<!--New features/improvements/fixes go here-->
+
+
+## [v1.0.1](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v1.0.1)
+
+### Issues
+
+- [#1](https://github.com/luguslabs/DAppNodePackage-archipel/issues/1): add optional ARCHIPEL_TELEMETRY_URL, POLKADOT_TELEMETRY_URL,ARCHIPEL_SUSPEND_SERVICE in install page
+
+Assuming directory type release
+  ✔ Fetch current version from APM (next version: 1.0.1)
+  ✔ Build and upload
+  ✔ Generate transaction
+
+  DNP (DAppNode Package) published (version 1.0.1) 
+  Manifest hash : /ipfs/QmQLd1wHXcQJEJcPAJBw2Nw54krh4Y5t3bMcMoCf4BMij3
+  http://my.dappnode/#/installer/%2Fipfs%2FQmQLd1wHXcQJEJcPAJBw2Nw54krh4Y5t3bMcMoCf4BMij3
+
+  You can also execute this transaction with Metamask by following this pre-filled link
+  
+  http://my.dappnode/#/sdk/publish/r=archipel.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmQLd1wHXcQJEJcPAJBw2Nw54krh4Y5t3bMcMoCf4BMij3
+
+ Published new version of this DNP :  
+  https://etherscan.io/tx/0xd0380fa0b213895e81c1b51a740068a38e358f9eec3c5a560f0a6a91d5ceddba
+
+
+## [v1.0.0](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v1.0.0)
+
+Assuming directory type release
+heavy_check_mark Fetch current version from APM (next version: 1.0.0)
+heavy_check_mark Build and upload
+heavy_check_mark Generate transaction
+
+DNP (DAppNode Package) published (version 1.0.0)
+Manifest hash : /ipfs/QmXvCAAtrA9uBoarW6srVy3RWNo7insxXYKcomjEP19Cgf
+http://my.dappnode/#/installer/%2Fipfs%2FQmXvCAAtrA9uBoarW6srVy3RWNo7insxXYKcomjEP19Cgf
+
+You can also execute this transaction with Metamask by following this pre-filled link
+
+http://my.dappnode/#/sdk/publish/r=archipel.public.dappnode.eth&v=1.0.0&h=%2Fipfs%2FQmXvCAAtrA9uBoarW6srVy3RWNo7insxXYKcomjEP19Cgf
+
+Transaction : https://etherscan.io/tx/0xb788878037d1fd21bf73e4ed2618a4c57e11c2864afc7cc27b79067b9790e336
