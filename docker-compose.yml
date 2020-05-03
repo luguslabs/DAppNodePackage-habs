@@ -1,15 +1,15 @@
-version: '3.4'
+version: "3.4"
 services:
   archipel.public.dappnode.eth:
     build: ./build
-    image: 'archipel.public.dappnode.eth:1.0.2'
+    image: "archipel.public.dappnode.eth:1.0.2"
     volumes:
-      - 'data:/root/chain/data'
-      - '/var/run/docker.sock:/var/run/docker.sock'
-      - 'service:/service'
-      - 'config:/config'
+      - "data:/root/chain/data"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "service:/service"
+      - "config:/config"
     ports:
-      - '51820:51820/udp'
+      - "51820:51820/udp"
     privileged: true
     cap_add:
       - NET_ADMIN
@@ -35,7 +35,7 @@ services:
       - ARCHIPEL_SUSPEND_SERVICE=
       - SERVICE=polkadot
       - POLKADOT_NAME=
-      - 'POLKADOT_IMAGE=parity/polkadot:latest'
+      - "POLKADOT_IMAGE=parity/polkadot:latest"
       - POLKADOT_PREFIX=kusama-data-
       - POLKADOT_KEY_GRAN=
       - POLKADOT_KEY_BABE=
@@ -47,7 +47,7 @@ services:
       - POLKADOT_TELEMETRY_URL=
       - POLKADOT_LAUNCH_IN_VPN=true
       - POLKADOT_SIMULATE_SYNCH=false
-      - POLKADOT_ADDITIONAL_OPTIONS=--db-cache 512
+      - POLKADOT_ADDITIONAL_OPTIONS=--db-cache 512 --unsafe-rpc-expose
     restart: always
 volumes:
   data: {}
