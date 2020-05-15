@@ -4,6 +4,26 @@
 
 <!--New features/improvements/fixes go here-->
 
+## [v1.0.4](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v1.0.4)
+
+✔ Fetch current version from APM (next version: 1.0.4)
+✔ Build and upload
+✔ Generate transaction
+
+DNP (DAppNode Package) published (version 1.0.4)
+Manifest hash : /ipfs/QmeZ7o1rkAAEE6UdxGown3ZnwtqtXTe2CFrRacaWKb1Yps
+http://my.dappnode/#/installer/%2Fipfs%2FQmeZ7o1rkAAEE6UdxGown3ZnwtqtXTe2CFrRacaWKb1Yps
+
+You must execute this transaction in mainnet to publish a new version of this DNP.
+
+You can also execute this transaction with Metamask by following this pre-filled link
+
+http://my.dappnode/#/sdk/publish/r=archipel.public.dappnode.eth&v=1.0.4&h=%2Fipfs%2FQmeZ7o1rkAAEE6UdxGown3ZnwtqtXTe2CFrRacaWKb1Yps
+
+Published new version of this DNP :
+
+https://etherscan.io/tx/0xe00242e16c9a0d4e5747a27a9fc3047f8206c3c114fe1049038d2a45e2bc0778
+
 ## [v1.0.3](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v1.0.3)
 
 Assuming directory type release
