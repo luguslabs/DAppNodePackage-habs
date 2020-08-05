@@ -1,6 +1,16 @@
 {
-    "ui:order": ["config_file_zip", "config_file_password", "node_id", "archipel_suspend_service", "archipel_telemetry_url", "polkadot_telemetry_url"],
-    "config_file_password": {
-      "ui:widget": "password"
-    }
+  "ui:order": [
+    "config_file_zip",
+    "config_file_password",
+    "node_id",
+    "archipel_service_mode",
+    "archipel_telemetry_url",
+    "polkadot_telemetry_url",
+    "polkadot_additional_options",
+    "polkadot_prefix",
+    "polkadot_image"
+  ],
+  "config_file_password": {
+    "ui:widget": "password"
   }
+}

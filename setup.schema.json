@@ -1,41 +1,71 @@
 {
-    "description": "Archipel Configuration. You must configure folowing parameters to start the Archipel Chain and also a Polkadot node. [README](https://github.com/luguslabs/archipel#archipel)",
-    "type": "object",
-    "properties": {
-        "config_file_zip": {
-            "type": "string",
-            "format": "data-url",
-            "title": "Archipel Zip Config File",
-            "description": "Config File Zip to upload"
-        },
-        "config_file_password": {
-            "type": "string",
-            "title": "Archipel Zip Config File Password",
-            "description": "Optional password for the Archipel Zip Config File"
-        },
-        "node_id": {
-            "type": "string",
-            "title": "NODE ID",
-            "description": "Archipel Config Node choice. Must be 1 or 2 or 3",
-            "default": "1",
-            "enum": ["1", "2", "3"]
-        },
-        "archipel_suspend_service": {
-            "type": "string",
-            "title": "Suspend Orchestration",
-            "description": "If true the service node is never switch to active and remains passive. For instance, may be usefull to wait for all nodes to be synch before orchestrate and define a leader to operate as active node.",
-            "default": "false"
-        },
-        "archipel_telemetry_url": {
-            "type": "string",
-            "title": "Archipel TELEMETRY URL",
-            "description": " Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry`"
-         },
-         "polkadot_telemetry_url": {
-            "type": "string",
-            "title": "Polkadot TELEMETRY URL",
-            "description": " Optional TELEMETRY_URL for Polkadot Node.  Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry` "
-         }
+  "description": "Archipel Configuration. You must configure folowing parameters to start the Archipel Chain and also a Polkadot node. [README](https://github.com/luguslabs/archipel#archipel)",
+  "type": "object",
+  "properties": {
+    "config_file_zip": {
+      "type": "string",
+      "format": "data-url",
+      "title": "Archipel Zip Config File",
+      "description": "Config File Zip to upload"
     },
-    "required": ["config_file_zip","node_id"]
+    "config_file_password": {
+      "type": "string",
+      "title": "Archipel Zip Config File Password",
+      "description": "Optional password for the Archipel Zip Config File"
+    },
+    "node_id": {
+      "type": "string",
+      "title": "NODE ID",
+      "description": "Archipel Config Node choice.",
+      "default": "1",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    "archipel_service_mode": {
+      "type": "string",
+      "title": "Archipel Mode",
+      "description": "orchestrator|active|passive|sentry",
+      "default": "orchestrator"
+    },
+    "archipel_telemetry_url": {
+      "type": "string",
+      "title": "Archipel TELEMETRY URL",
+      "description": " Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry`"
+    },
+    "polkadot_telemetry_url": {
+      "type": "string",
+      "title": "Polkadot TELEMETRY URL",
+      "description": " Optional TELEMETRY_URL for Polkadot Node.  Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry` "
+    },
+    "polkadot_additional_options": {
+      "type": "string",
+      "title": "Polkadot Additionnal Options",
+      "description": " Polkadot CLI option  Example : --chain kusama"
+    },
+    "polkadot_prefix": {
+      "type": "string",
+      "title": "Polkadot prefix docker volume",
+      "description": "docker prefix volume for polkadot container data : kusama-data-",
+      "default": "polkadot-data-"
+    },
+    "polkadot_image": {
+      "type": "string",
+      "title": "Polkadot Docker Image",
+      "description": " docker image to use like : parity/polkadot:v0.8.19"
+    }
+  },
+  "required": ["config_file_zip", "node_id"]
 }

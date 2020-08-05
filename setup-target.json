@@ -1,26 +1,38 @@
 {
-    "config_file_zip": {
-        "type": "fileUpload",
-        "path": "/config/archipel-config.zip"
-    },
-    "config_file_password": {
-        "type": "environment",
-        "name": "CONFIG_FILE_PASSWORD"
-    },
-    "node_id": {
-        "type": "environment",
-        "name": "NODE_ID"
-    },
-    "archipel_suspend_service": {
-        "type": "environment",
-        "name": "ARCHIPEL_SUSPEND_SERVICE"
-    },
-    "archipel_telemetry_url": {
-        "type": "environment",
-        "name": "ARCHIPEL_TELEMETRY_URL"
-    },
-    "polkadot_telemetry_url": {
-        "type": "environment",
-        "name": "POLKADOT_TELEMETRY_URL"
-    }
+  "config_file_zip": {
+    "type": "fileUpload",
+    "path": "/config/archipel-config.zip"
+  },
+  "config_file_password": {
+    "type": "environment",
+    "name": "CONFIG_FILE_PASSWORD"
+  },
+  "node_id": {
+    "type": "environment",
+    "name": "NODE_ID"
+  },
+  "archipel_service_mode": {
+    "type": "environment",
+    "name": "ARCHIPEL_SERVICE_MODE"
+  },
+  "archipel_telemetry_url": {
+    "type": "environment",
+    "name": "ARCHIPEL_TELEMETRY_URL"
+  },
+  "polkadot_telemetry_url": {
+    "type": "environment",
+    "name": "POLKADOT_TELEMETRY_URL"
+  },
+  "polkadot_additional_options": {
+    "type": "environment",
+    "name": "POLKADOT_ADDITIONAL_OPTIONS"
+  },
+  "polkadot_prefix": {
+    "type": "environment",
+    "name": "POLKADOT_PREFIX"
+  },
+  "polkadot_image": {
+    "type": "environment",
+    "name": "POLKADOT_IMAGE"
+  }
 }

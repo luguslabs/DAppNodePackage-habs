@@ -10,6 +10,7 @@ services:
       - 'config:/config'
     ports:
       - '51820:51820/udp'
+      - '3001:3001'
     privileged: true
     cap_add:
       - NET_ADMIN
@@ -18,6 +19,9 @@ services:
       - CONFIG_FILE=true
       - CONFIG_FILE_PASSWORD=
       - NODE_ID=
+      - NODE_ROLE=
+      - NODE_GROUP=
+      - NODE_GROUP_ID=
       - WIREGUARD_PRIVATE_KEY=
       - WIREGUARD_ADDRESS=
       - WIREGUARD_LISTEN_PORT=
@@ -32,11 +36,23 @@ services:
       - ARCHIPEL_AUTHORITIES_SR25519_LIST=
       - ARCHIPEL_AUTHORITIES_ED25519_LIST=
       - ARCHIPEL_TELEMETRY_URL=
-      - ARCHIPEL_SUSPEND_SERVICE=
-      - SERVICE=polkadot
+      - ARCHIPEL_TELEMETRY_LOGLEVEL=0
+      - ARCHIPEL_SERVICE_MODE=orchestrator
+      - ARCHIPEL_HEARTBEATS_ENABLE=true
+      - ARCHIPEL_ORCHESTRATION_ENABLE=true
+      - SMS_STONITH_ACTIVE=false
+      - SMS_STONITH_CALLBACK_MANDATORY=false
+      - NEXMO_API_KEY=
+      - NEXMO_API_SECRET=
+      - NEXMO_API_SIGNATURE_METHOD=
+      - NEXMO_API_SIGNATURE_SECRET=
+      - NEXMO_API_CHECK_MSG_SIGNATURE=
+      - NEXMO_PHONE_NUMBER=
+      - OUTLET_PHONE_NUMBER_LIST=
+      - SERVICES=polkadot
       - POLKADOT_NAME=
       - 'POLKADOT_IMAGE=parity/polkadot:latest'
-      - POLKADOT_PREFIX=kusama-data-
+      - POLKADOT_PREFIX=polkadot-data-
       - POLKADOT_KEY_GRAN=
       - POLKADOT_KEY_BABE=
       - POLKADOT_KEY_IMON=
@@ -45,9 +61,10 @@ services:
       - POLKADOT_NODE_KEY_FILE=
       - POLKADOT_RESERVED_NODES=
       - POLKADOT_TELEMETRY_URL=
-      - POLKADOT_LAUNCH_IN_VPN=true
       - POLKADOT_SIMULATE_SYNCH=false
-      - POLKADOT_ADDITIONAL_OPTIONS=--db-cache 512 --rpc-methods=Unsafe
+      - POLKADOT_ADDITIONAL_OPTIONS=
+
+      - DEBUG=
     restart: always
 volumes:
   data: {}
