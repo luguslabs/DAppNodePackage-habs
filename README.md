@@ -1,5 +1,5 @@
-
 # DAppNode Package Archipel
+
 ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Website archipel.id](https://img.shields.io/badge/Website-archipel.id-brightgreen.svg)](https://archipel.id/)
@@ -44,12 +44,12 @@ or
 $ docker build --rm -f build/Dockerfile -t dnp_archipel:dev build
 ```
 
-
 ### Configuration env parameters needed
 
 ### Environment Variables
 
 #### With config file
+
 The ZIP config file can be generate with [archipel CLI](https://github.com/luguslabs/archipel/tree/master/cli#use)
 | Variable | Description | Values |
 |----------|-------------|--------|
@@ -59,41 +59,54 @@ The ZIP config file can be generate with [archipel CLI](https://github.com/lugus
 
 #### Without config file
 
-| Variable | Description | Values |
-|----------|-------------|--------|
-| `WIREGUARD_PRIVATE_KEY` | Wireguard private key. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | String |
-| `WIREGUARD_PEERS_PUB_ADDR` | Wireguard public key. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | String |
-| `WIREGUARD_ADDRESS` | Wireguard address in the wireguard private network. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | 10.0.1.n/32 |
-| `WIREGUARD_LISTEN_PORT` | Port UDP of the private network. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | 51820 |
-| `WIREGUARD_PEERS_ALLOWED_IP` | all peers address in the private network separate by `,`. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | 10.0.1.1/32,10.0.1.2/32,10.0.1.3/32 |
-| `WIREGUARD_PEERS_EXTERNAL_ADDR` | all public IP address of peers separate by `,`. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md) | PUBLIC_IP_1,PUBLIC_IP_2,PUBLIC_IP_3 |
-| `ARCHIPEL_NODE_ALIAS` | Node name for the Archipel Substrate node within the federation. <br>Example<br> `Archipel-yourFederationName-NodeNameHere` | String |
-| `ARCHIPEL_LISTEN_PORT` | Archipel Substrate listen port | 30334
-| `ARCHIPEL_NODE_KEY_FILE` | Binary node key file name that must be present in container volume /config/ARCHIPEL_NODE_KEY_FILE. Value is used then with Substrate option `--node-key-file`. <br> Note that bin file is generate with [subkey generate-node-key](https://github.com/luguslabs/archipel/blob/master/bootstrap/src/substrate.js#L29) | String |
-| `ARCHIPEL_KEY_SEED` |  | mnemonic |
-| `ARCHIPEL_RESERVED_PEERS` | valorize `--reserved-nodes` substrate option. Note that archipel substrate is also launch with `--reserved-only` option.<br> Example :<br> `/ip4/WIREGUARD_ADDRESS_1/tcp/ARCHIPEL_LISTEN_PORT/p2p/NODE_PEER_ID_1,/ip4/WIREGUARD_ADDRESS_2/tcp/ARCHIPEL_LISTEN_PORT/p2p/NODE_PEER_ID_2,/ip4/WIREGUARD_ADDRESS_3/tcp/ARCHIPEL_LISTEN_PORT/p2p/NODE_PEER_ID_3` | String
-| `ARCHIPEL_AUTHORITIES_SR25519_LIST` | Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in SR25519 format separated by \",\" char.<br> `<SR25519 Public Key Node 1>,<SR25519 Public Key Node 2>,<SR25519 Public Key Node 3>`|  Public Key, Public Key, Public Key
-| `ARCHIPEL_AUTHORITIES_ED25519_LIST` | Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in ED25519 format separated by \",\" char.<br>`<ED25519 Public Key Node 1>,<ED25519 Public Key Node 2>,<ED25519 Public Key Node 3>`| Public Key, Public Key, Public Key
-| `ARCHIPEL_TELEMETRY_URL` | Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry`|
-| `ARCHIPEL_SUSPEND_SERVICE` | If true the service node is never switch to active and remains passive. | boolean |
-| `SERVICE` | External service you want to launch. Only support `polkadot` at the moment. | polkadot |
+| Variable                            | Description                                                                                                                                                                                                                                                                                                                                                 | Values                              |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| `NODE_ROLE`                         | can be `operator` , `sentry` or `externalSentry`                                                                                                                                                                                                                                                                                                            | String                              |
+| `NODE_GROUP`                        | Several groups with one leader on each group can be created. Here to configure the group name for the UI                                                                                                                                                                                                                                                    | String                              |
+| `NODE_GROUP_ID`                     | Several groups with one leader on each group can be created. Here to affect the group id for launched the node                                                                                                                                                                                                                                              | Integer                             |
+| `WIREGUARD_PRIVATE_KEY`             | Wireguard private key. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md)                                                                                                                                                                                     | String                              |
+| `WIREGUARD_PEERS_PUB_ADDR`          | Wireguard public key. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md)                                                                                                                                                                                      | String                              |
+| `WIREGUARD_ADDRESS`                 | Wireguard address in the wireguard private network. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md)                                                                                                                                                        | 10.0.1.n/32                         |
+| `WIREGUARD_LISTEN_PORT`             | Port UDP of the private network. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md)                                                                                                                                                                           | 51820                               |
+| `WIREGUARD_PEERS_ALLOWED_IP`        | all peers address in the private network separate by `,`. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md)                                                                                                                                                  | 10.0.1.1/32,10.0.1.2/32,10.0.1.3/32 |
+| `WIREGUARD_PEERS_EXTERNAL_ADDR`     | all public IP address of peers separate by `,`. More details in [Archipel Wireguard Keys Initialization](https://github.com/luguslabs/archipel/blob/master/doc/wireguard-keys-initialization.md)                                                                                                                                                            | PUBLIC_IP_1,PUBLIC_IP_2,PUBLIC_IP_3 |
+| `ARCHIPEL_NODE_ALIAS`               | Node name for the Archipel Substrate node within the federation. <br>Example<br> `Archipel-yourFederationName-NodeNameHere`                                                                                                                                                                                                                                 | String                              |
+| `ARCHIPEL_LISTEN_PORT`              | Archipel Substrate listen port                                                                                                                                                                                                                                                                                                                              | 30334                               |
+| `ARCHIPEL_NODE_KEY_FILE`            | Binary node key file name that must be present in container volume /config/ARCHIPEL_NODE_KEY_FILE. Value is used then with Substrate option `--node-key-file`. <br> Note that bin file is generate with [subkey generate-node-key](https://github.com/luguslabs/archipel/blob/master/bootstrap/src/substrate.js#L29)                                        | String                              |
+| `ARCHIPEL_KEY_SEED`                 |                                                                                                                                                                                                                                                                                                                                                             | mnemonic                            |
+| `ARCHIPEL_RESERVED_PEERS`           | valorize `--reserved-nodes` substrate option. Note that archipel substrate is also launch with `--reserved-only` option.<br> Example :<br> `/ip4/WIREGUARD_ADDRESS_1/tcp/ARCHIPEL_LISTEN_PORT/p2p/NODE_PEER_ID_1,/ip4/WIREGUARD_ADDRESS_2/tcp/ARCHIPEL_LISTEN_PORT/p2p/NODE_PEER_ID_2,/ip4/WIREGUARD_ADDRESS_3/tcp/ARCHIPEL_LISTEN_PORT/p2p/NODE_PEER_ID_3` | String                              |
+| `ARCHIPEL_AUTHORITIES_SR25519_LIST` | Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in SR25519 format separated by \",\" char.<br> `<SR25519 Public Key Node 1>,<SR25519 Public Key Node 2>,<SR25519 Public Key Node 3>`                                    | Public Key, Public Key, Public Key  |
+| `ARCHIPEL_AUTHORITIES_ED25519_LIST` | Valorize the Genesis [Spec file](https://github.com/luguslabs/archipel/blob/master/deployer/test/chain/customSpec.json) for Archipel chain with the list of Authorities Public Keys in ED25519 format separated by \",\" char.<br>`<ED25519 Public Key Node 1>,<ED25519 Public Key Node 2>,<ED25519 Public Key Node 3>`                                     | Public Key, Public Key, Public Key  |
+| `ARCHIPEL_TELEMETRY_URL`            | Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit`. No Log level number must be set after URL. Cannot be an url list.`| empty or 'URL' or`--no-telemetry`| |`ARCHIPEL_TELEMETRY_LOGLEVEL` | Optional ARCHIPEL_TELEMETRY_LOGLEVEL for Archipel substrate node. Example 0 or 1 | integer                      |
+
+| `ARCHIPEL_SERVICE_MODE` | orchestrator mode will decide automatically to start in active or passive mode ( default mode ). You can also force mode active passive or sentry but be aware that if others node are in orchestrator mode. It may leads to 2 activate nodes... Be carfull when you force state. First force all your node to passive node is safer. | `orchestrator|active|passive|sentry` |
+| `ARCHIPEL_ORCHESTRATION_ENABLE` | activate or desactivate orchestrator deamon | boolean
+| `ARCHIPEL_HEARTBEATS_ENABLE` | activate or desactivate heartbeat transaction propagation deamon | boolean
+
+| `SMS_STONITH_ACTIVE` | SMS STONITH option active or not | boolean |
+| `SMS_STONITH_CALLBACK_MANDATORY` | Callback mandatory or not to become leader | boolean |
+| `NEXMO_API_KEY` | Needed for nexmo api | String |
+| `NEXMO_API_SECRET` | can be `operator` , `sentry` or `externalSentry` | String |
+| `NEXMO_API_SIGNATURE_METHOD` | Needed if signature check active | String |
+| `NEXMO_API_SIGNATURE_SECRET` | Needed if signature check active | String |
+| `NEXMO_API_CHECK_MSG_SIGNATURE` | if true check the signature from nexmo servip in webook response | boolean |
+| `NEXMO_PHONE_NUMBER` | Virtual number from nexmo service to send sms and received callback sms. List separated by `,` | String |
+| `OUTLET_PHONE_NUMBER_LIST` | outlet sim carde phone number to stop, start restart the outlet. List separated by `,`| String |
+| `SERVICES` | External service you want to launch. Only support `polkadot` at the moment. | polkadot |
 | `POLKADOT_NAME` | Node name for the polkadot node. Will be visible in [Polkadot telemetry URL](https://telemetry.polkadot.io/). This Node Name will a a -passive or -active suffix according to the current mode. <br>Example<br>`Archipel-yourFederationName-NodeNameHere` | String |
-| `POLKADOT_IMAGE` | Polkadot docker image version to use. |  parity/polkadot:latest |
+| `POLKADOT_IMAGE` | Polkadot docker image version to use. | parity/polkadot:latest |
 | `POLKADOT_PREFIX` | This prefix is used to mount the docker volume for blockchain state on the server. | String |
-| `POLKADOT_KEY_GRAN` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator. <br>Gran keyType, Granpa ed25519.<br> Use for consensus.<br> [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
-| `POLKADOT_KEY_BABE` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> Babe keyType, Babe sr25519. <br>Use for consensus/block production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
-| `POLKADOT_KEY_IMON` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> IMON keyType, IamOnline key.<br> Use for heartbeat/block production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
-| `POLKADOT_KEY_PARA` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> PARA keyType. sr25519. <br>Use for parachain production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
-| `POLKADOT_KEY_AUDI` |12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> AUDI keyType. sr25519.<br> Use for Audit. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained)| mnemonic |
+| `POLKADOT_KEY_GRAN` | 12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator. <br>Gran keyType, Granpa ed25519.<br> Use for consensus.<br> [More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained) | mnemonic |
+| `POLKADOT_KEY_BABE` | 12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> Babe keyType, Babe sr25519. <br>Use for consensus/block production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained) | mnemonic |
+| `POLKADOT_KEY_IMON` | 12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> IMON keyType, IamOnline key.<br> Use for heartbeat/block production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained) | mnemonic |
+| `POLKADOT_KEY_PARA` | 12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> PARA keyType. sr25519. <br>Use for parachain production. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained) | mnemonic |
+| `POLKADOT_KEY_AUDI` | 12 words mnemonic. <br> Polkadot Sessions keys needed to operate as validator.<br> AUDI keyType. sr25519.<br> Use for Audit. <br>[More details for sessions keys](https://github.com/luguslabs/archipel/tree/master/orchestrator#polkadot-sessions-keys-explained) | mnemonic |
 | `POLKADOT_NODE_KEY_FILE` | Binary node key file name that must be present in container volume `/config/POLKADOT_NODE_KEY_FILE`. <br> Will be then present in polkdaot container in folder `/polkadot/keys/`. <br> Value is used then with Polkadot option `--node-key-file`. <br> Note that bin file is generate with [subkey generate-node-key](https://github.com/luguslabs/archipel/blob/master/bootstrap/src/substrate.js#L29) | String |
-| `POLKADOT_RESERVED_NODES` | valorize `--reserved-nodes` substrate option. <br> Note that polkadot is also launch with `--reserved-only` for validator ( active ) mode. <br> Example :<br> `/ip4/WIREGUARD_ADDRESS_1/tcp/30333/p2p/POLKADOT_NODE_PEER_ID_1,/ip4/WIREGUARD_ADDRESS_2/tcp/30333/p2p/POLKADOT_NODE_PEER_ID_2,/ip4/WIREGUARD_ADDRESS_3/tcp/30333/p2p/POLKADOT_NODE_PEER_ID_3` | String
-| `POLKADOT_TELEMETRY_URL` | Optional TELEMETRY_URL for Polkadot Node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry`|
+| `POLKADOT_RESERVED_NODES` | valorize `--reserved-nodes` substrate option. <br> Note that polkadot is also launch with `--reserved-only` for validator ( active ) mode. <br> Example :<br> `/ip4/WIREGUARD_ADDRESS_1/tcp/30333/p2p/POLKADOT_NODE_PEER_ID_1,/ip4/WIREGUARD_ADDRESS_2/tcp/30333/p2p/POLKADOT_NODE_PEER_ID_2,/ip4/WIREGUARD_ADDRESS_3/tcp/30333/p2p/POLKADOT_NODE_PEER_ID_3` | String |
+| `POLKADOT_TELEMETRY_URL` | Optional TELEMETRY_URL for Polkadot Node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry` |
 | `POLKADOT_LAUNCH_IN_VPN` | Use wireguard network for Polkadot | true |
-| `POLKADOT_SIMULATE_SYNCH` | Use for testing purpuse to not wait Kusama to be synch to test active/passive switches| false 
-| `POLKADOT_ADDITIONAL_OPTIONS` | all others polkadot commands can be set in this env varibale separated with a space | --option1 value1 --options2 value2  
-
-
-
+| `POLKADOT_SIMULATE_SYNCH` | Use for testing purpuse to not wait Kusama to be synch to test active/passive switches | false |
+| `POLKADOT_ADDITIONAL_OPTIONS` | all others polkadot commands can be set in this env varibale separated with a space | --option1 value1 --options2 value2 |
 
 ## Running
 
@@ -173,11 +186,10 @@ This project is licensed under Apache 2 - see the [LICENSE](LICENSE) file for de
 
 [DappNode](https://www.dappnode.io/)
 
-
 ## Acknowledgements
+
 <p align="center">
   <img src=./web3_foundation_grants_badge.svg width = 400>
 </p>
 
 The bootstrap development of Archipel is financed by [WEB3 Foundation](https://web3.foundation/)'s grant program [Wave4](https://medium.com/web3foundation/wrap-up-for-winter-with-our-wave-four-grant-recipients-52c27b831a6e). Thanks a lot for support.
-
