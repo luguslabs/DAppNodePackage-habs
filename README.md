@@ -80,9 +80,8 @@ The ZIP config file can be generate with [archipel CLI](https://github.com/lugus
 | `ARCHIPEL_TELEMETRY_URL`            | Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit`. No Log level number must be set after URL. Cannot be an url list.`| empty or 'URL' or`--no-telemetry`| 
 |`ARCHIPEL_TELEMETRY_LOGLEVEL` | Optional ARCHIPEL_TELEMETRY_LOGLEVEL for Archipel substrate node. Example 0 or 1 | integer                      |
 | `ARCHIPEL_SERVICE_MODE` | orchestrator mode will decide automatically to start in active or passive mode ( default mode ). You can also force mode active passive or sentry but be aware that if others node are in orchestrator mode. It may leads to 2 activate nodes... Be carfull when you force state. First force all your node to passive node is safer. | `orchestrator|active|passive|sentry` |
-| `ARCHIPEL_ORCHESTRATION_ENABLE` | activate or desactivate orchestrator deamon | boolean
-| `ARCHIPEL_HEARTBEATS_ENABLE` | activate or desactivate heartbeat transaction propagation deamon | boolean
-
+| `ARCHIPEL_ORCHESTRATION_ENABLE` | activate or desactivate orchestrator deamon | boolean  |
+| `ARCHIPEL_HEARTBEATS_ENABLE` | activate or desactivate heartbeat transaction propagation deamon | boolean  |
 | `SMS_STONITH_ACTIVE` | SMS STONITH option active or not | boolean |
 | `SMS_STONITH_CALLBACK_MANDATORY` | Callback mandatory or not to become leader | boolean |
 | `NEXMO_API_KEY` | Needed for nexmo api | String |
