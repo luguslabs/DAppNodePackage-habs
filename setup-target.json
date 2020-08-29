@@ -34,5 +34,9 @@
   "polkadot_image": {
     "type": "environment",
     "name": "POLKADOT_IMAGE"
+  },
+  "polkadot_backup_url": {
+    "type": "environment",
+    "name": "POLKADOT_BACKUP_URL"
   }
 }

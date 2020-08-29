@@ -8,7 +8,8 @@
     "polkadot_telemetry_url",
     "polkadot_additional_options",
     "polkadot_prefix",
-    "polkadot_image"
+    "polkadot_image",
+    "polkadot_backup_url"
   ],
   "config_file_password": {
     "ui:widget": "password"

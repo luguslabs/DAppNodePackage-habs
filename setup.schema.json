@@ -65,6 +65,11 @@
       "type": "string",
       "title": "Polkadot Docker Image",
       "description": " docker image to use like : parity/polkadot:v0.8.19"
+    },
+    "polkadot_backup_url": {
+      "type": "string",
+      "title": "Polkadot backup URL",
+      "description": "URL to previous chain data backup. To start quicky or to restore to specific clean base"
     }
   },
   "required": ["config_file_zip", "node_id"]

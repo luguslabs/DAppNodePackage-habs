@@ -65,6 +65,7 @@ services:
       - POLKADOT_SIMULATE_SYNCH=false
       - POLKADOT_ADDITIONAL_OPTIONS=
       - POLKADOT_SESSION_KEY_TO_CHECK=
+      - POLKADOT_BACKUP_URL=
       - DEBUG=
     restart: always
 volumes:
