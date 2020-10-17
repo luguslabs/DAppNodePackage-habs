@@ -1,7 +1,7 @@
 {
   "name": "archipel.public.dappnode.eth",
-  "version": "2.0.1",
-  "upstreamVersion": "2.0.1",
+  "version": "2.1.0",
+  "upstreamVersion": "2.1.0",
   "shortDescription": "Archipel : Divide and federate to run unsinkable services. Welcome aboard to all cloud shipwrecked !",
   "description": "Archipel goal is to assure HA (High-Availbility) for services on decentralized infrastructures by federating several DAppNodes. [README](https://github.com/luguslabs/archipel#archipel)",
   "requirements": {
