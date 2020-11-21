@@ -38,5 +38,9 @@
   "polkadot_backup_url": {
     "type": "environment",
     "name": "POLKADOT_BACKUP_URL"
+  },
+  "polkadot_validator_name": {
+    "type": "environment",
+    "name": "POLKADOT_VALIDATOR_NAME"
   }
 }

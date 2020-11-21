@@ -70,6 +70,11 @@
       "type": "string",
       "title": "Polkadot backup URL",
       "description": "URL to previous chain data backup. To start quicky or to restore to specific clean base"
+    },
+    "polkadot_validator_name": {
+      "type": "string",
+      "title": "Polkadot Validator Name",
+      "description": "Validator name of the group to be supervised in web3 telemetry."
     }
   },
   "required": ["config_file_zip", "node_id"]
