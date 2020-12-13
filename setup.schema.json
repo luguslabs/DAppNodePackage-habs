@@ -75,6 +75,11 @@
       "type": "string",
       "title": "Polkadot Validator Name",
       "description": "Validator name of the group to be supervised in web3 telemetry."
+    },
+    "polkadot_name": {
+      "type": "string",
+      "title": "Polkadot Name",
+      "description": "Passive node name for this instance"
     }
   },
   "required": ["config_file_zip", "node_id"]

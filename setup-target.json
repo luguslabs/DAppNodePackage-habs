@@ -42,5 +42,9 @@
   "polkadot_validator_name": {
     "type": "environment",
     "name": "POLKADOT_VALIDATOR_NAME"
+  },
+  "polkadot_name": {
+    "type": "environment",
+    "name": "POLKADOT_NAME"
   }
 }
