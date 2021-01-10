@@ -8,9 +8,14 @@
 
 Dappnode package responsible for providing the Archipel service.
 
-Actually based on version [v1.0.0](https://github.com/luguslabs/archipel/releases/tag/v1.0.0) of [Archipel](https://github.com/luguslabs/archipel)
+It is an AragonApp whose repo is deployed at this address: [0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a ](https://etherscan.io/address/0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a) and whose ENS address is: [archipel.public.dappnode.eth](https://etherscan.io/enslookup?q=archipel.public.dappnode.eth]) . **Not Updated** because gaz price too high. 
+**To deploy the DAppNode Package**, when connected to the DAppNode Wifi or VPN to a DAppNode instance launch :
 
-It is an AragonApp whose repo is deployed at this address: [0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a ](https://etherscan.io/address/0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a) and whose ENS address is: [archipel.public.dappnode.eth](https://etherscan.io/enslookup?q=archipel.public.dappnode.eth])
+```
+$ dappnodesdk build
+```
+
+Then click on the DAppNode IPFS link to install it.
 
 ## Getting Started
 
@@ -189,6 +194,3 @@ This project is licensed under Apache 2 - see the [LICENSE](LICENSE) file for de
 
 <p align="center">
   <img src=./web3_foundation_grants_badge.svg width = 400>
-</p>
-
-The bootstrap development of Archipel is financed by [WEB3 Foundation](https://web3.foundation/)'s grant program [Wave4](https://medium.com/web3foundation/wrap-up-for-winter-with-our-wave-four-grant-recipients-52c27b831a6e). Thanks a lot for support.
