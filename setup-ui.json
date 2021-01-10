@@ -5,13 +5,19 @@
     "node_id",
     "archipel_service_mode",
     "archipel_telemetry_url",
+    "services",
     "polkadot_telemetry_url",
     "polkadot_additional_options",
     "polkadot_prefix",
     "polkadot_image",
     "polkadot_backup_url",
     "polkadot_validator_name",
-    "polkadot_name"
+    "polkadot_name",
+    "trustlines_address",
+    "centrifuge_image",
+    "centrifuge_validator_name",
+    "centrifuge_telemetry_url",
+    "centrifuge_additional_options"
   ],
   "config_file_password": {
     "ui:widget": "password"

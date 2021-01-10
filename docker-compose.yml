@@ -2,7 +2,7 @@ version: "3.4"
 services:
   archipel.public.dappnode.eth:
     build: ./build
-    image: "archipel.public.dappnode.eth:2.1.2"
+    image: "archipel.public.dappnode.eth:2.2.0"
     volumes:
       - "data:/root/chain/data"
       - "/var/run/docker.sock:/var/run/docker.sock"
@@ -68,6 +68,18 @@ services:
       - POLKADOT_SESSION_KEY_TO_CHECK=
       - POLKADOT_BACKUP_URL=
       - DEBUG=
+      - TRUSTLINES_ACCOUNT=
+      - "TRUSTLINES_IMAGE=trustlines/tlbc-node:release"
+      - "CENTRIFUGE_IMAGE=centrifugeio/centrifuge-chain:latest"
+      - CENTRIFUGE_VALIDATOR_NAME=CentrifugeArchipelValidator
+      - CENTRIFUGE_TELEMETRY_URL=
+      - CENTRIFUGE_ADDITIONAL_OPTIONS=
+      - CENTRIFUGE_SESSION_KEY_TO_CHECK=
+      - CENTRIFUGE_SIMULATE_SYNCH=
+      - CENTRIFUGE_KEY_GRAN=
+      - CENTRIFUGE_KEY_BABE=
+      - CENTRIFUGE_KEY_IMON=
+      - CENTRIFUGE_KEY_AUDI=
     restart: always
 volumes:
   data: {}

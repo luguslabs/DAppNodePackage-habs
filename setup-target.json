@@ -19,6 +19,10 @@
     "type": "environment",
     "name": "ARCHIPEL_TELEMETRY_URL"
   },
+  "services": {
+    "type": "environment",
+    "name": "SERVICES"
+  },
   "polkadot_telemetry_url": {
     "type": "environment",
     "name": "POLKADOT_TELEMETRY_URL"
@@ -46,5 +50,25 @@
   "polkadot_name": {
     "type": "environment",
     "name": "POLKADOT_NAME"
+  },
+  "trustlines_address": {
+    "type": "environment",
+    "name": "TRUSTLINES_ACCOUNT"
+  },
+  "centrifuge_image": {
+    "type": "environment",
+    "name": "CENTRIFUGE_IMAGE"
+  },
+  "centrifuge_validator_name": {
+    "type": "environment",
+    "name": "CENTRIFUGE_VALIDATOR_NAME"
+  },
+  "centrifuge_telemetry_url": {
+    "type": "environment",
+    "name": "CENTRIFUGE_TELEMETRY_URL"
+  },
+  "centrifuge_additional_options": {
+    "type": "environment",
+    "name": "CENTRIFUGE_ADDITIONAL_OPTIONS"
   }
 }

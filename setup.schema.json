@@ -45,6 +45,11 @@
       "title": "Archipel TELEMETRY URL",
       "description": " Optional TELEMETRY_URL for Archipel substrate node. Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry`"
     },
+    "services": {
+      "type": "string",
+      "title": "Services",
+      "description": " Possible values = polkadot, trustlines, centrifuge "
+    },
     "polkadot_telemetry_url": {
       "type": "string",
       "title": "Polkadot TELEMETRY URL",
@@ -80,6 +85,31 @@
       "type": "string",
       "title": "Polkadot Name",
       "description": "Passive node name for this instance"
+    },
+    "trustlines_address": {
+      "type": "string",
+      "title": "Trustlines Public Address",
+      "description": "Trustlines Public Address need for validator. json account file must be load here : /service/tlbc/key/tlbc/account.json and password file here : /service/tlbc/key/pass.pwd "
+    },
+    "centrifuge_image": {
+      "type": "string",
+      "title": "Centrifuge Docker Image",
+      "description": " docker image to use like : centrifugeio/centrifuge-chain:latest"
+    },
+    "centrifuge_validator_name": {
+      "type": "string",
+      "title": "Centrifuge Validator Name",
+      "description": "Centrifuge name of the group to be supervised in web3 telemetry."
+    },
+    "centrifuge_telemetry_url": {
+      "type": "string",
+      "title": "Centrifuge TELEMETRY URL",
+      "description": " Optional TELEMETRY_URL for centrifuge Node.  Example : `ws://BACKEND_PUBLIC_IP:8000/submit 0`. Log level number must be set after URL. Can be an url list separated by `,` | empty or 'URL1 0,URL2 0' or `--no-telemetry` "
+    },
+    "centrifuge_additional_options": {
+      "type": "string",
+      "title": "Centrifuge Additionnal Options",
+      "description": " Polkadot CLI option  Example : --chain=mainnet --chain=amber  --chain=flint  "
     }
   },
   "required": ["config_file_zip", "node_id"]
