@@ -2,7 +2,7 @@ version: "3.4"
 services:
   archipel.public.dappnode.eth:
     build: ./build
-    image: "archipel.public.dappnode.eth:2.2.0"
+    image: "archipel.public.dappnode.eth:2.2.1"
     volumes:
       - "data:/root/chain/data"
       - "/var/run/docker.sock:/var/run/docker.sock"
@@ -59,6 +59,7 @@ services:
       - POLKADOT_KEY_BABE=
       - POLKADOT_KEY_IMON=
       - POLKADOT_KEY_PARA=
+      - POLKADOT_KEY_ASGN=
       - POLKADOT_KEY_AUDI=
       - POLKADOT_NODE_KEY_FILE=
       - POLKADOT_RESERVED_NODES=
