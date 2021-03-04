@@ -4,6 +4,8 @@
 
 <!--New features/improvements/fixes go here-->
 
+## [v2.2.2](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v2.2.2)
+
 ## [v2.2.1](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v2.2.1)
 
 ## [v2.2.0](https://github.com/luguslabs/DAppNodePackage-archipel/releases/tag/v2.2.0)
