@@ -102,7 +102,13 @@
   "2.2.2": {
     "hash": "/ipfs/QmRwf7LipbT4C5CakpRt16iX2oSbxF6AjfpHF9wMt4b9WR",
     "uploadedTo": {
-      "dappnode": "Thu, 04 Mar 2021 18:12:28 GMT"
+      "dappnode": "Fri, 05 Mar 2021 19:53:13 GMT"
+    }
+  },
+  "2.2.3": {
+    "hash": "/ipfs/QmYWc2hpoC2BYmJPXBLMMSffAW8YiTydoYFSX5cbqYifLo",
+    "uploadedTo": {
+      "dappnode": "Mon, 24 May 2021 14:04:36 GMT"
     }
   }
 }
