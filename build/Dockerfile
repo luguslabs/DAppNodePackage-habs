@@ -1,1 +1,1 @@
-FROM luguslabs/archipel:2.2.3
+FROM luguslabs/archipel:2.2.4
